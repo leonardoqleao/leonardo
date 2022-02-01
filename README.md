@@ -3,7 +3,7 @@
 | ------------- | ------------- |  ------------- | ------------- |
 
 ## This Repository:
-| <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"> <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&lql&theme=buefy" /> </a> |
+| <a href="https://github.com/leonardoqleao/leonardo"> <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&lql&theme=buefy" /> </a> |
 | ------------- |
 
 ## GitHub Stats:
