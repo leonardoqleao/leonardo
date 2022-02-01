@@ -2,12 +2,15 @@
 | <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"><img align="center" alt="Leonardo-React" height="30" width="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" /></a> | <img align="center" alt="Leonardo-NodeJs" height="30" width="30" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" /> | <img align="center" alt="Leonardo-JavaScript" height="30" width="30" src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png" /> | <img align="center" alt="Leonardo-TypeScript" height="30" width="30" src="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"> | 
 | ------------- | ------------- |  ------------- | ------------- |
 
-| <a href="https://github.com/leonardoqleao"><img height="200em" src="https://github-readme-stats.vercel.app/api?username=leonardoqleao&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" /> | <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=compact&theme=buefy&hide_border=true" /> </a> |
-| ------------- | ------------- |
-
 ## This Repository:
 | <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"> <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&lql&theme=buefy" /> </a> |
 | ------------- |
+
+## GitHub Stats:
+| <a href="https://github.com/leonardoqleao"><img height="200em" src="https://github-readme-stats.vercel.app/api?username=leonardoqleao&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" /> | <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=compact&theme=buefy&hide_border=true" /> </a> |
+| ------------- | ------------- |
+
+
 
 
 <br />
