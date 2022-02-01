@@ -14,10 +14,6 @@
 
 ### I'm WebSit Developer:
 
-<a href="https://www.astyal.com">
-   <img height="250em" src="./logo.png" alt="astyal">
-    <br />
-</a>
 
 <br />
 
