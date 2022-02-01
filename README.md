@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## Languages and Tools:
+| <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"><img align="center" alt="Leonardo-React" height="30" width="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" /></a> | <img align="center" alt="Leonardo-NodeJs" height="30" width="30" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" /> | <img align="center" alt="Leonardo-JavaScript" height="30" width="30" src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png" /> | <img align="center" alt="Leonardo-TypeScript" height="30" width="30" src="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"> | <img align="center" alt="Leonardo-c" height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"> | <img align="center" alt="Leonardo-cpp" height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png"> | <img align="center" alt="Leonardo-csharp" height="30" width="30" src="https://cdn.worldvectorlogo.com/logos/c--4.svg">
+| ------------- | ------------- |  ------------- | ------------- | ------------- | ------------- | ------------- |
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+| <a href="https://github.com/leonardoqleao"><img height="200em" src="https://github-readme-stats.vercel.app/api?username=leonardoqleao&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" /> | <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=compact&theme=buefy&hide_border=true" /> </a> |
+| ------------- | ------------- |
 
-## Available Scripts
+## React Repository:
+| <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"> <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnreact&lql&theme=buefy" /> </a> |
+| ------------- |
 
-In the project directory, you can run:
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### I'm WebSit Developer:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<a href="https://www.astyal.com">
+   <img height="250em" src="./logo.png" alt="astyal">
+    <br />
+</a>
 
-### `npm test`
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div>
+    <a href="mailto:leonardoqleao@outlook.com"><img
+            src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=red"
+            target="_blank"></a>
+    <a href="https://www.linkedin.com/in/leonardo-queiros-leao-590a11204" target="_blank"><img
+            src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+            target="_blank"></a>
+    <a href="https://api.whatsapp.com/send/?phone=0556291820243&text&app_absent=0"><img
+            src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=black"
+            target="_blank"></a>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</div>
