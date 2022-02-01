@@ -5,8 +5,8 @@
 | <a href="https://github.com/leonardoqleao"><img height="200em" src="https://github-readme-stats.vercel.app/api?username=leonardoqleao&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" /> | <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=compact&theme=buefy&hide_border=true" /> </a> |
 | ------------- | ------------- |
 
-## React Repository:
-| <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"> <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnreact&lql&theme=buefy" /> </a> |
+## This Repository:
+| <a href="https://github.com/leonardoqleao/learnReact/tree/reactV2"> <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&lql&theme=buefy" /> </a> |
 | ------------- |
 
 
