@@ -6,6 +6,9 @@ function App() {
   return (
     <div className='App'>
       <header className='cabecalho'>
+        <div className='menu-below-700'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#ffffff'><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        </div>
         <nav className='menu'>
           <ul>
             <li><a href='#personal'>PERSONAL STATEMENT</a>  </li>
@@ -21,15 +24,15 @@ function App() {
         </nav>
 
       </header>
-      <body className='body'>
+      <div className='body'>
         <div className='stats'>
           <p className='github'>
 
-            <div className='tela'>
+            <div className='canvas'>
               <h2 id='github'>GitHub:</h2>
               <div className='imgs'>
-                <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=demo&theme=vue&hide_border=true&hide=c' />
-                <img id='stats' src='https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=vue&show_icons=true' />
+                <div className='most'> <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=demo&theme=vue&hide_border=true&hide=c' /></div>
+                <img className='stats' src='https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=vue&show_icons=true' />
 
               </div>
               <h3 id='rep'>Repositorys:</h3>
@@ -57,7 +60,7 @@ function App() {
             <br />
           </p>
         </div>
-      </body>
+      </div>
     </div>
 
   );
