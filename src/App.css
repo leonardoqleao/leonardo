@@ -63,7 +63,7 @@
 }
 .imgs img, #stats{
   display: inline;
-  padding: 10px;
+  padding: auto;
 }
 @media (min-width: 700px) {
   .menu-below-700{
@@ -71,7 +71,7 @@
   }
   .imgs img{
     height: 500px;
-    width: 700px;
+    width: 600px;
   }
   
 }
@@ -105,8 +105,8 @@
   }
   .body {
     display: block;
-    max-width: 360px;
+    width: 360px;
     font-size: calc(10px + 1vmin);
     overflow-x: hidden;
-  }  
-} 
+  }
+}
