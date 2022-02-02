@@ -15,19 +15,13 @@
 }
 .cabecalho{
   display: flex;
-  max-height: 10ch;
+  max-height: 7ch;
   background-color: var(--color-background-primary);
 }
 .menu ul{
   max-width: 90%;
   display: inline;
   list-style: none;
-}
-.menu ul ul{
-  display: none;
-  left: 0;
-  position: absolute;
-  min-width: 175px;
 }
 .menu ul li{
   display: inline;
@@ -37,7 +31,7 @@
   font-size: 20px;
   transition: transform 200ms;
   transition: background .2s;
-  padding: 20px;
+  padding: 15px;
   display: inline-block;
   text-decoration: none;
   color: var(--color-font-secondary);
@@ -51,14 +45,15 @@
   display: block;
   box-sizing:border-box;
   background-color: rgb(255, 255, 255);
-  max-height: 90vh;
+  max-height: 93vh;
   font-size: calc(10px + 2vmin);
   color: black;
   overflow-y: scroll;
-  scrollbar-width: none;
-}.body::-webkit-scrollbar {
-  display: none;
+  /* scrollbar-width: none; */
 }
+/* .body::-webkit-scrollbar {
+  display: none;
+} */
 .imgs{
   text-align: center;
   padding: 40px;
@@ -74,4 +69,25 @@
   height: 15em;
   width: 25em;
   padding: 10px;
+}
+@midia (min-width: 1100px){
+  .cabecalho{
+    display: inline;
+  }
+}
+/* display between width 1100 - 900  */
+@media (max-width: 1100px) {
+  .menu ul li a{
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .menu ul li a{
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+/* mobile responsivity 700 */
+@midia (max-width: 700px) {
+
 }
