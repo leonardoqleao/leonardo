@@ -1,7 +1,13 @@
 *{
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+*::selection{
+  background: none;
+  cursor: default;
+}*:hover{
+  cursor: default;
 }
 :root{
   --color-font-primary: rgb(0, 0, 0);
@@ -14,8 +20,8 @@
   text-align: left;
 }
 .cabecalho{
+  position: fixed;
   display: flex;
-  max-height: 7ch;
   background-color: var(--color-background-primary);
 }
 .menu-below-700{
@@ -26,16 +32,12 @@
   display: inline;
   list-style: none;
 }
-.menu ul li{
-  display: inline;
-  position: relative;
-}
 .menu ul li a{
   font-size: 20px;
   transition: transform 200ms;
   transition: background .2s;
   padding: 15px;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: var(--color-font-secondary);
 }
@@ -45,18 +47,20 @@
   transform: scale(1.02);
 }
 .body {
-  display: inline;
   box-sizing:border-box;
   background-color: rgb(255, 255, 255);
-  height: 93vh;
+  height: 100vh;
   font-size: calc(10px + 2vmin);
   color: black;
   overflow-y: scroll;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
 }
-/* .body::-webkit-scrollbar {
+.body::-webkit-scrollbar {
   display: none;
-} */
+}
+.stats{
+  padding-top: 60px;
+}
 .imgs{
   text-align: center;
   padding: 40px;
@@ -65,24 +69,29 @@
   display: inline;
   padding: auto;
 }
+.menu-below-700:hover{
+  background-color: rgb(31, 29, 29);
+  cursor: pointer;  
+}
+
 @media (min-width: 700px) {
   .menu-below-700{
     display: none;
+  }
+  .cabecalho{
+    width: 100%;
   }
   .imgs img{
     height: 500px;
     width: 600px;
   }
-  
-}
-@midia (min-width: 1100px){
-  .cabecalho{
-    display: inline;
-  }
-  .imgs img{
-    
+  .menu ul li{
+    display: inline-block;
   }
   
+  .menu{
+    margin: auto;
+  }
 }
 /* display between width 1100 - 900  */
 @media (max-width: 1100px) {
@@ -94,19 +103,26 @@
   .menu ul li a{
     padding: 10px;
     font-size: 13px;
+
   }
 }
 
 /* mobile responsivity 700 */
-@midia (max-width: 700px) {
+@media (max-width: 700px) {
+  .effect{
+    transition: margin .5s;
+  }
   .menu-below-700{
     padding: 10px;
-    display: block;
+    max-height: 45px;
   }
   .body {
     display: block;
-    width: 360px;
     font-size: calc(10px + 1vmin);
     overflow-x: hidden;
   }
+  
+  .menu{
+    text-align: center;
+  }  
 }
