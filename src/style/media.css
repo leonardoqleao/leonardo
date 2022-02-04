@@ -44,6 +44,7 @@
     .menu-below-700 {
         padding: 10px;
         max-height: 45px;  
+        margin-bottom: 50%;
     }
     .body {
         display: block;
@@ -57,7 +58,5 @@
     }
     .button-light-dark{
         align-items: flex-start;
-    }.idlist{
-        display: none;
     }
 }
