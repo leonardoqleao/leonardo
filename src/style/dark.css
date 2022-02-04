@@ -1,29 +1,30 @@
 :root{
-    --color-font-primary: rgb(255, 255, 255);
-    --color-background-primary: rgb(202, 202, 202);
-    --color-font-secondary: rgb(0, 0, 0);
-    --color-background-secondary: rgb(21, 21, 21);
-    --color-font-menu: rgb(233, 233, 233);
-    --color-background-button: rgb(237, 224, 224);
-    --color-shadow-h2: rgba(255, 255, 255, 0.3);
-    --color-border-h2: rgba(255, 255, 255, 0.6);
+    /* color dark */
+    --dcolor-font-primary: rgb(255, 255, 255);
+    --dcolor-background-primary: rgb(202, 202, 202);
+    --dcolor-font-secondary: rgb(0, 0, 0);
+    --dcolor-background-secondary: rgb(21, 21, 21);
+    --dcolor-font-menu: rgb(233, 233, 233);
+    --dcolor-background-button: rgb(237, 224, 224);
+    --dcolor-shadow-h2: rgba(255, 255, 255, 0.3);
+    --dcolor-border-h2: rgba(255, 255, 255, 0.6);
 }
 
 /* Dark Color */
 .cdcolor {
-    background-color: var(--color-background-primary);
+    background-color: var(--dcolor-background-primary);
 }
 .mdcolor ul li a { /*trocar por class*/
-    color: var(--color-font-secondary);
+    color: var(--dcolor-font-secondary);
 }
 .mdcolor ul li a:hover { /*trocar por class*/
-    background-color: var(--color-background-secondary);
-    color: var(--color-font-menu);
+    background-color: var(--dcolor-background-secondary);
+    color: var(--dcolor-font-menu);
 }
 .bdcolor {
-    background-color: var(--color-background-secondary);
-    color: var(--color-font-primary);
+    background-color: var(--dcolor-background-secondary);
+    color: var(--dcolor-font-primary);
 }
 .mdbcolor:hover {
-    background-color: var(--color-background-button);
+    background-color: var(--dcolor-background-button);
 }
