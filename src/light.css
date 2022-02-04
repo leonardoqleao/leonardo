@@ -1,0 +1,34 @@
+:root{
+    /* color ligh */
+    --color-font-primary: rgb(0, 0, 0);
+    --color-background-primary: rgb(0, 0, 0);
+    --color-font-secondary: rgb(255, 255, 255);
+    --color-background-secondary: rgb(255, 255, 255);
+    --color-font-menu: rgb(49, 49, 49);
+    --color-background-button: rgb(31, 29, 29);
+    --color-shadow-h2: rgba(0, 0, 0, 0.3);
+    --color-border-h2: rgba(0, 0, 0, 0.6);
+
+}
+h2{
+    box-shadow:  -5px 5px 5px var(--color-shadow-h2) ;
+    border-bottom: solid calc(1px + 0.1vmin) var(--color-border-h2) ;
+    border-left: solid calc(1px + 0.1vmin) var(--color-border-h2)  ;
+}
+.ccolor{
+    background-color: var(--color-background-primary);
+}
+.mcolor ul li a{ 
+  color: var(--color-font-secondary);
+}
+.mcolor ul li a:hover{ 
+    background-color: var(--color-background-secondary);
+    color: var(--color-font-menu);
+}
+.bcolor{
+    background-color: var(--color-background-secondary);
+    color: var(--color-font-primary);
+}
+.mbcolor:hover{
+    background-color: var(--color-background-button);
+}

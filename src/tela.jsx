@@ -1,4 +1,4 @@
-function tela(){
+function Tela(){
 return (<div>oi</div>)
 }
-export default tela
+export default Tela

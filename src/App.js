@@ -1,45 +1,49 @@
 import logo from './logo.svg';
-import tela from './tela.jsx'
+import Tela from './tela.jsx'
 import './App.css';
-import { Component } from 'react';
+import './dark.css';
+import './light.css';
+import './teste.css';
 
+import { Component } from 'react';
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: 'open',
-      textlign: 'cabecalho',
-      width: '100%'
+      display: '',
+      color1:'',
+      color2:'',
+      color3:'',
+      color4:'',
+      color5:'',
+      color6:'',
+      color7:'',
+      color8:'',
+      color10:'',
+      color12:'',
+      color13:'',
     }
   }
-  botonC = () => {
-    this.state.display == 'none' ? this.setState({ display: 'inline' }) : this.setState({ display: 'none' })
-    this.state.textlign == 'm cabecalho' ? this.setState({ textlign: 't cabecalho'}) : this.setState({ textlign: 'm cabecalho'})
-  }
   render() {
-    let { display } = this.state;
-    let {textlign} = this.state;
     return (
       <div className='App'>
-
-        <header className='cabecalho' className={textlign}>
-          <div onClick={this.botonC} className='menu-below-700'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#ffffff'><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+        <header className='cabecalho ccolor'>
+          <div className='menu-below-700 mbcolor'>
+            <svg id='svg' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#ffffff'><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
           </div>
-          <nav className='menu effect'>
+          <nav className='menu mcolor'>
             <ul>
-              <li className={display} ><a href='#personal'>PERSONAL STATEMENT</a>  </li>
-              <li className={display} ><a href='#experience'>EXPERIENCE</a>  </li>
-              <li className={display} ><a href='#projects'>PROJECTS</a>  </li>
-              <li className={display} ><a href='#github'>GITHUB</a>  </li>
-              <li className={display} ><a href='#repositories'>REPOSITORIES</a></li>
-              <li className={display} ><a href='#education'>EDUCATION</a>  </li>
-              <li className={display} ><a href='#contact'>CONTACT</a>  </li>
+              <li><a href='#personal'>PERSONAL STATEMENT</a>  </li>
+              <li><a href='#experience'>EXPERIENCE</a>  </li>
+              <li><a href='#projects'>PROJECTS</a>  </li>
+              <li><a href='#github'>GITHUB</a>  </li>
+              <li><a href='#repositories'>REPOSITORIES</a></li>
+              <li><a href='#education'>EDUCATION</a>  </li>
+              <li><a href='#contact'>CONTACT</a>  </li>
             </ul>
           </nav>
-
         </header>
-        <div className='body'>
+        <div className='body bcolor'>
           <div className='stats'>
             <div>
               <h2 id='personal'>Personal Statemente:</h2>
@@ -56,7 +60,7 @@ class App extends Component {
               <h2 id='github'>GitHub:</h2>
               <div className='imgs'>
                 <div className='most'> <img height="300em" src='https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=demo&theme=vue&hide_border=true&hide=c' /></div>
-                <img className='stats' height="190em" src='https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=vue&show_icons=true' />
+                <img className='stats' height="180em" src='https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=vue&show_icons=true' />
               </div>
             </div>
             <div>
@@ -64,20 +68,15 @@ class App extends Component {
             </div>
             <div>
               <h2 id='education'>Education:</h2>
-
             </div>
             <div>
               <h2 id='contact'>Contact:</h2>
-
+              <Tela/>
             </div>
           </div>
         </div>
       </div>
-
     );
-
   }
-
 }
-
 export default App;
