@@ -10,20 +10,20 @@
 }
 
 /* Dark Color */
-.cdcolor{
+.cdcolor {
     background-color: var(--color-background-primary);
 }
-.mdcolor ul li a{ 
-  color: var(--color-font-secondary);
+.mdcolor ul li a { /*trocar por class*/
+    color: var(--color-font-secondary);
 }
-.mdcolor ul li a:hover{ 
+.mdcolor ul li a:hover { /*trocar por class*/
     background-color: var(--color-background-secondary);
     color: var(--color-font-menu);
 }
-.bdcolor{
+.bdcolor {
     background-color: var(--color-background-secondary);
     color: var(--color-font-primary);
 }
-.mdbcolor:hover{
+.mdbcolor:hover {
     background-color: var(--color-background-button);
 }

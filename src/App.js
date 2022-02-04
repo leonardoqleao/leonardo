@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import Tela from './tela.jsx'
-import './App.css';
-import './dark.css';
-import './light.css';
-import './teste.css';
-
+import Tela from './jsx/tela.jsx'
+import './style/App.css';
+import './style/dark.css';
+import './style/light.css';
+import './style/teste.css';
+import './style/media.css';
 import { Component } from 'react';
 class App extends Component {
   constructor(props) {
