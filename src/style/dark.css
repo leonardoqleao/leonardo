@@ -11,20 +11,25 @@
 }
 
 /* Dark Color */
-.cdcolor {
+h2{
+    box-shadow:  -2px 4px 5px var(--dcolor-shadow-h2) ;
+    border-bottom: solid calc(1px + 0.1vmin) var(--dcolor-border-h2) ;
+    border-left: solid calc(1px + 0.1vmin) var(--dcolor-border-h2)  ;
+}
+.cdcolor{
     background-color: var(--dcolor-background-primary);
 }
-.mdcolor ul li a { /*trocar por class*/
-    color: var(--dcolor-font-secondary);
+.mdcolor ul li a{ 
+  color: var(--dcolor-font-secondary);
 }
-.mdcolor ul li a:hover { /*trocar por class*/
+.mdcolor ul li a:hover{ 
     background-color: var(--dcolor-background-secondary);
     color: var(--dcolor-font-menu);
 }
-.bdcolor {
+.bdcolor{
     background-color: var(--dcolor-background-secondary);
     color: var(--dcolor-font-primary);
 }
-.mdbcolor:hover {
+.mbdcolor:hover{
     background-color: var(--dcolor-background-button);
 }
