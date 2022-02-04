@@ -9,6 +9,7 @@
 }*:hover{
   cursor: default;
 }
+
 :root{
   --color-font-primary: rgb(0, 0, 0);
   --color-background-primary: rgb(0, 0, 0);
@@ -109,12 +110,17 @@
 
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
-  .effect{
+  .effect .none .inline .open{
     transition: margin .5s;
   }
   .menu-below-700{
     padding: 10px;
     max-height: 45px;
+    
+  }.t{
+    width: 100%;
+
+  }.m{
   }
   .body {
     display: block;
@@ -124,5 +130,13 @@
   
   .menu{
     text-align: center;
-  }  
+  }
+  .open{
+    display: none;
+  }
+  .none{
+    display: inline;
+  }.inline{
+    display: none;
+  }
 }

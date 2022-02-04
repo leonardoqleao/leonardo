@@ -7,32 +7,34 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: 'inline-block',
-      textlign: 'center',
+      display: 'open',
+      textlign: 'cabecalho',
       width: '100%'
     }
   }
   botonC = () => {
     this.state.display == 'none' ? this.setState({ display: 'inline' }) : this.setState({ display: 'none' })
+    this.state.textlign == 'm cabecalho' ? this.setState({ textlign: 't cabecalho'}) : this.setState({ textlign: 'm cabecalho'})
   }
   render() {
     let { display } = this.state;
+    let {textlign} = this.state;
     return (
       <div className='App'>
 
-        <header className='cabecalho'>
-          {/* <div onClick={this.botonC} className='menu-below-700'>
+        <header className='cabecalho' className={textlign}>
+          <div onClick={this.botonC} className='menu-below-700'>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#ffffff'><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
-          </div> this is a botton */}
+          </div>
           <nav className='menu effect'>
             <ul>
-              <li style={{ display: display }} ><a href='#personal'>PERSONAL STATEMENT</a>  </li>
-              <li style={{ display: display }} ><a href='#experience'>EXPERIENCE</a>  </li>
-              <li style={{ display: display }} ><a href='#projects'>PROJECTS</a>  </li>
-              <li style={{ display: display }} ><a href='#github'>GITHUB</a>  </li>
-              <li style={{ display: display }} ><a href='#repositories'>REPOSITORIES</a></li>
-              <li style={{ display: display }} ><a href='#education'>EDUCATION</a>  </li>
-              <li style={{ display: display }} ><a href='#contact'>CONTACT</a>  </li>
+              <li className={display} ><a href='#personal'>PERSONAL STATEMENT</a>  </li>
+              <li className={display} ><a href='#experience'>EXPERIENCE</a>  </li>
+              <li className={display} ><a href='#projects'>PROJECTS</a>  </li>
+              <li className={display} ><a href='#github'>GITHUB</a>  </li>
+              <li className={display} ><a href='#repositories'>REPOSITORIES</a></li>
+              <li className={display} ><a href='#education'>EDUCATION</a>  </li>
+              <li className={display} ><a href='#contact'>CONTACT</a>  </li>
             </ul>
           </nav>
 
@@ -61,11 +63,11 @@ class App extends Component {
               <h2 id='repositories'>Repositories:</h2>
             </div>
             <div>
-            <h2 id='education'>Education:</h2>
+              <h2 id='education'>Education:</h2>
 
             </div>
             <div>
-            <h2 id='contact'>Contact:</h2>
+              <h2 id='contact'>Contact:</h2>
 
             </div>
           </div>
