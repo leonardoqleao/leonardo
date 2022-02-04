@@ -45,25 +45,19 @@
         padding: 10px;
         max-height: 45px;  
     }
-    .t {
-        width: 100%;
-    }
     .body {
         display: block;
         font-size: calc(10px + 1vmin);
         overflow-x: hidden;
     }
-
-    .menu {
-        text-align: center;
+    .cabecalho{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
-    .open {
-        display: none;
-    }
-    .none {
-        display: inline;
-    }
-    .inline {
+    .button-light-dark{
+        align-items: flex-start;
+    }.idlist{
         display: none;
     }
 }
