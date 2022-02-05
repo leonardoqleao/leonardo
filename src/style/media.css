@@ -62,4 +62,16 @@
         width: auto;
     }
   
+}@media(min-width: 2080px){
+    html{
+        max-width: 1800px;
+        margin: auto;
+        background-color:black;        
+        
+    }.cabecalho{
+        max-width: 1800px;
+    
+    }h2{
+        font-size: 50px;
+    }
 }
