@@ -1,9 +1,11 @@
 import { Component } from "react";
+import fLightOurDark from '../menu.jsx'
 
 class Repo extends Component {
-    render(){
-        return(
-            <h2 id='repositories'>Repositories:</h2>
+
+    render() {
+        return (
+            <></>
         )
     }
 }
