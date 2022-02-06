@@ -1,3 +1,14 @@
+@media(min-width: 2080px){
+    html{
+        max-width: 1800px;
+        margin: auto;
+        background-color:black; 
+    }.cabecalho{
+        max-width: 1800px;
+    }.h2, .dh2{
+        font-size: 50px;
+    }
+}
 @media (min-width: 700px) {
     .menu-below-700{
         display: none;
@@ -9,10 +20,9 @@
         height: 500px;
         width: 600px;
     }
-    .menu ul li{ /*trocar por class*/
+    .mdcolor-ul li, .mdcolor-ul-close li{ /*trocar por class*/
         display: inline-block;
     }
-    
     .menu{
         margin: auto;
     }
@@ -22,25 +32,34 @@
   
 /* display between width 1100 - 900  */
 @media (max-width: 1100px) {
-    .menu ul li a{ /*trocar por class*/
+    .mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
         font-size: 15px;
+        padding: 15px;
+    }.cabecalho{
+        height: 50px;
     }
 }
 @media (max-width: 900px) {
-    .menu ul li a{ /*trocar por class*/
-        padding: 10px;
+    .mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
+        padding: 8px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         font-size: 13px;
     }
+    .cabecalho{
+        height: 50px;
+    }
+    .mdcolor-ul { /*trocar por class*/
+        max-width: 90%;
+        display: inline;
+        list-style: none;
+      }
 }
-
-
-
-
-
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
-    .effect .none .inline .open{
-        transition: margin .5s;
+    .cabecalho, .cabecalho-close,{
+        transition: width .5s;
+        transition: all .5s;
     }
     .menu-below-700 {
         padding: 10px;        
@@ -50,33 +69,36 @@
         font-size: calc(10px + 1vmin);
         overflow-x: hidden;
     }
-    .cabecalho{
-        width: 100%;
+    .cabecalho{ 
+        width: auto;
+        height: auto;
         align-self: center;
         justify-content: space-between;
     }
-    /* .button-light-dark{
-        display: none;
-    } */
-    .idlist{
-        display: none;
-    }
+    
     .button-light-dark{
         width: 30px;
         height: 30px;
         margin: 7px;
+        display: none;
     }
-  
-}@media(min-width: 2080px){
-    html{
-        max-width: 1800px;
-        margin: auto;
-        background-color:black;        
-        
-    }.cabecalho{
-        max-width: 1800px;
-    
-    }.h2, .dh2{
-        font-size: 50px;
+    /*animação*/
+    .button-light-dark-close{
+        width: 30px;
+        height: 30px;
+        margin: 7px;
+    }
+    .cabecalho-close{
+        width: 100%;
+    }
+    .mdcolor-ul-close{
+        display: none;
+        list-style: none;
+        max-width: 90%;
+    }.mdcolor-ul-open{
+        display: inline;
+        max-width: 90%;
+        display: inline;
+        list-style: none;
     }
 }
