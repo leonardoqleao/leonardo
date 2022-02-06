@@ -3,14 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  /* color ligh */
-  --color-font-primary: rgb(0, 0, 0);
-  --color-background-primary: rgb(0, 0, 0);
-  --color-font-secondary: rgb(255, 255, 255);
-  --color-background-secondary: rgb(255, 255, 255);
-  --color-font-menu: rgb(49, 49, 49);
-}
 .App {
   text-align: left;
 }
@@ -22,12 +14,12 @@
 .menu-below-700 {
   padding: 15px;
 }
-.menu ul { /*trocar por class*/
+.mdcolor-ul, .mdcolor-ul-close{ /*trocar por class*/
   max-width: 90%;
   display: inline;
   list-style: none;
 }
-.menu ul li a { /*trocar por class*/
+.mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
   font-size: 20px;
   transition: transform 200ms;
   transition: background .2s;
@@ -35,17 +27,21 @@
   display: block;
   text-decoration: none;
 }
-.menu ul li a:hover { /*trocar por class*/
+.mdcolor-ul li a:hover { /*trocar por class*/
   transform: scale(1.02);
 }
-.body {
+.button-light-dark, .button-light-dark-close{
+  margin: 10px;
+  margin-right: 15px;
+}
+.bcolor, .bdcolor {
   box-sizing:border-box;
   height: 100vh;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
   overflow-y: scroll;
   scrollbar-width: none;
 }
-.body::-webkit-scrollbar {
+.bcolor::-webkit-scrollbar, .bdcolor::-webkit-scrollbar {
   display: none;
 }
 .stats {
@@ -59,6 +55,6 @@
   display: inline;
   padding: auto;
 }
-.menu-below-700:hover {
+.menu-below-700:hover, .button-light-dark:hover, .button-light-dark-close:hover{
   cursor: pointer;  
 }

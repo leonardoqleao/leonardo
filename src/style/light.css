@@ -10,7 +10,7 @@
     --color-border-h2: rgba(0, 0, 0, 0.6);
 
 }
-h2{
+.h2{
     box-shadow:  -5px 5px 5px var(--color-shadow-h2) ;
     border-bottom: solid calc(1px + 0.1vmin) var(--color-border-h2) ;
     border-left: solid calc(1px + 0.1vmin) var(--color-border-h2)  ;
@@ -18,10 +18,10 @@ h2{
 .ccolor{
     background-color: var(--color-background-primary);
 }
-.mcolor ul li a{ 
+.mcolor-ul-li-a{ 
   color: var(--color-font-secondary);
 }
-.mcolor ul li a:hover{ 
+.mcolor-ul-li-a:hover{ 
     background-color: var(--color-background-secondary);
     color: var(--color-font-menu);
 }
