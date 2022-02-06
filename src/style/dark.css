@@ -1,28 +1,28 @@
 :root{
     /* color dark */
     --dcolor-font-primary: rgb(255, 255, 255);
-    --dcolor-background-primary: rgb(202, 202, 202);
+    --dcolor-background-primary: rgb(161, 161, 161);
     --dcolor-font-secondary: rgb(0, 0, 0);
     --dcolor-background-secondary: rgb(21, 21, 21);
     --dcolor-font-menu: rgb(233, 233, 233);
     --dcolor-background-button: rgb(237, 224, 224);
     --dcolor-shadow-h2: rgba(255, 255, 255, 0.3);
-    --dcolor-border-h2: rgba(255, 255, 255, 0.6);
+    --dcolor-border-h2: rgba(255, 255, 255, 0.513);
 }
 
 /* Dark Color */
-.h2{
-    box-shadow:  -2px 4px 5px var(--dcolor-shadow-h2) ;
+.dh2{
+    box-shadow:  -2px 5px 5px var(--dcolor-shadow-h2) ;
     border-bottom: solid calc(1px + 0.1vmin) var(--dcolor-border-h2) ;
     border-left: solid calc(1px + 0.1vmin) var(--dcolor-border-h2)  ;
 }
 .cdcolor{
     background-color: var(--dcolor-background-primary);
 }
-.mdcolor ul li a{ 
-  color: var(--dcolor-font-secondary);
+.mdcolor-ul-li-a{ 
+    color: var(--dcolor-font-secondary);
 }
-.mdcolor ul li a:hover{ 
+.mdcolor-ul-li-a:hover{ 
     background-color: var(--dcolor-background-secondary);
     color: var(--dcolor-font-menu);
 }

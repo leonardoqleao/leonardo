@@ -9,7 +9,7 @@ body {
     sans-serif;
 
 }
-h2{
+.h2, .dh2{
   padding-left: 15px ;
   padding-bottom: 5px ;
   margin-left: 10px;

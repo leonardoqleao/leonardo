@@ -36,16 +36,14 @@
 
 
 
+
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
     .effect .none .inline .open{
         transition: margin .5s;
     }
     .menu-below-700 {
-        padding: 10px;
-        max-height: 45px;  
-        margin-bottom: 50%;
-        
+        padding: 10px;        
     }
     .body {
         display: block;
@@ -53,13 +51,20 @@
         overflow-x: hidden;
     }
     .cabecalho{
-        justify-content: space-between;
-        align-items: center;
         width: 100%;
+        align-self: center;
+        justify-content: space-between;
+    }
+    /* .button-light-dark{
+        display: none;
+    } */
+    .idlist{
+        display: none;
     }
     .button-light-dark{
-        display: block;
-        width: auto;
+        width: 30px;
+        height: 30px;
+        margin: 7px;
     }
   
 }@media(min-width: 2080px){
@@ -71,7 +76,7 @@
     }.cabecalho{
         max-width: 1800px;
     
-    }h2{
+    }.h2, .dh2{
         font-size: 50px;
     }
 }

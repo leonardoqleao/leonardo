@@ -18,10 +18,10 @@
 .ccolor{
     background-color: var(--color-background-primary);
 }
-.mcolor ul li a{ 
+.mcolor-ul-li-a{ 
   color: var(--color-font-secondary);
 }
-.mcolor ul li a:hover{ 
+.mcolor-ul-li-a:hover{ 
     background-color: var(--color-background-secondary);
     color: var(--color-font-menu);
 }
