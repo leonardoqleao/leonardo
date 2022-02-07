@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}.stats2{
-  float: right;
-  max-width: fit-content;
-  max-height: fit-content;
 }
 .App {
   text-align: center;
@@ -14,10 +10,7 @@
   position: fixed;
   display: flex;
 }
-.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection{
-  background: none;
-}
-.menu-below-700::selection{
+.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection{
   background: none;
 }
 .menu-below-700 {
@@ -58,7 +51,7 @@
 }
 .imgs {
   text-align: center;
-  padding: 10px auto;
+  padding: 10px;
 }
 .imgs img{ /*trocar por class*/
   display: inline;

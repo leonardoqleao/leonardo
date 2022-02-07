@@ -98,9 +98,18 @@
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
     .rep-img{
-        height: 150px;
-        width: 350px;
+        height: 145px;
+        width: 360px;
         float: center;
+    }.stats{
+        height: auto;
+        width: 95%;
+        float: center;
+    }.stats1{
+        width: 95%;
+    }.stats2{
+        width: 400px;
+        height: 240px;
     }
     .menu-below-700 {
         padding: 10px;

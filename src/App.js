@@ -60,7 +60,6 @@ class App extends Component {
     return (
       
       <div className={classN[5]}>
-        {alert("Guilherme")}
         <header className={classN[1] + ' ' + display[2]}>
           <div onClick={this.fMenu} className={classN[2]}>
             <svg id='svg' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
@@ -91,11 +90,11 @@ class App extends Component {
             <div>
               <h2 className={classN[0]} >GitHub:</h2>
               <div className='imgs'>
-                <img className='stats' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&langs_count=8&layout=compact&theme=' + link[0] + '&hide_border=true'} />
+                <img className='stats2' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&langs_count=8&layout=compact&theme=' + link[0] + '&hide_border=true'} />
                 <img className='stats' width="45%" height="60em" src={'https://github-readme-streak-stats.herokuapp.com/?user=leonardoqleao&theme=' + link[0] + '&date_format=M%20j%5B%2C%20Y%5D&hide_border=true'} />
                 <img className='stats' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=' + link[0] + '&show_icons=true'} />
               </div>
-              <img className='stats' align="center" width="90%" src={'https://activity-graph.herokuapp.com/graph?username=leonardoqleao&theme=github&bg_color=' + link[1] + '&hide_border=true&color=' + link[2]} />
+              <img className='stats1' align="center" width="90%" src={'https://activity-graph.herokuapp.com/graph?username=leonardoqleao&theme=github&bg_color=' + link[1] + '&hide_border=true&color=' + link[2]} />
 
 
               <div className='imgs-reps'>
@@ -131,7 +130,7 @@ class App extends Component {
           </div>
 
           <div><br id='contact' />
-            <h2 className={classN[0]} >Contact:</h2>
+            <h2 className={classN[0]} onClick={console.log('anota meu número, 62 991820243')} >Contact:</h2>
             <Contact />
           </div>
         </div>
