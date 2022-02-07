@@ -27,23 +27,14 @@
         width: 100%;
     }
     .imgs img{ /*trocar por class*/
-        height: 500px;
-        width: 600px;
+        height: 400px;
+        width: 500px;
     }
     .rep-img{
         height: 250px;
         width: 600px;
-    }.rep-img{
-        transition: transform 200ms ease-in;
-      
     }
-    .rep-img-1{
-        transition: transform 200ms ease-in;
-    }
-    .rep-img:hover{
-        transform: scale(1.1);
-        
-    }
+   
     .mdcolor-ul li, .mdcolor-ul-close li{ /*trocar por class*/
         display: inline-block;
     }
@@ -62,11 +53,12 @@
         padding: 15px;
     }.cabecalho{
         height: 50px;
+    }.stats{
+        max-height: 300px;
     }
     .reps, .dreps{
         text-align: center;
-        float: center;
-        width: 100%;
+        width: 45%;
     }
     .ref-reps{
         text-align: justify;
@@ -95,7 +87,6 @@
       }
     .reps{
         text-align: center;
-        float: center;
         width: 100%;
     }
     .ref-reps{

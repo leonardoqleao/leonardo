@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}.stats2{
+  float: right;
+  max-width: fit-content;
+  max-height: fit-content;
 }
 .App {
-  text-align: left;
+  text-align: center;
 }
 .cabecalho {
   position: fixed;
@@ -50,34 +54,34 @@
   display: none;
 }
 .stats {
-  padding-top: 60px;
+  padding: 10px;
 }
 .imgs {
   text-align: center;
-  padding: 40px auto;
+  padding: 10px auto;
 }
-.imgs img, #stats { /*trocar por class*/
+.imgs img{ /*trocar por class*/
   display: inline;
   padding: auto;
+  text-align: center;
 }
 .menu-below-700:hover, .button-light-dark:hover, .button-light-dark-close:hover{
   cursor: pointer;  
 }
 .imgs-reps{
-  display: flex;
   width: auto;
-  flex-direction:column;
-  margin-left: auto;
-
+  display: inline-block;
 }.reps, .dreps{
   padding: 5px;
-  width: 100%;
   border-radius: 0 0 5px 10px;
   margin-top: 5px;
-}.ref-reps{
+}.ref-reps{ /*para testo no repositorio*/
   text-align: justify;
   float: right;
   width: 55%;
   padding: 10px;
   height: 100%;
+}.rep-img{
+  display: block;
+  width: 40%;
 }
