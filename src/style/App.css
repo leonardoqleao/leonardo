@@ -9,7 +9,6 @@
 .cabecalho {
   position: fixed;
   display: flex;
-
 }
 .cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection{
   background: none;
@@ -81,12 +80,4 @@
   width: 55%;
   padding: 10px;
   height: 100%;
-}.rep-img{
-  float: right;
-}
-.rep-img-1{
-  float: left;
-}
-.rep-img:hover, .rep-img-1:hover{
-  
 }

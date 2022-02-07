@@ -21,7 +21,7 @@ class App extends Component {
     super(props);
     this.state = {
       display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''],
-      link: ['flag-india', 'buefy', 'flag-india', 'swift', 'graywhite', 'default', 'vue', 'moltack', 'gruvbox_light', 'vue'],
+      link: ['vue', 'buefy', 'flag-india', 'swift', 'graywhite', 'default', 'vue', 'moltack', 'gruvbox_light', 'vue'],
       classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'],//0-7
       lightOurDark: iconDark,
     }
@@ -32,14 +32,14 @@ class App extends Component {
       this.setState({ lightOurDark: iconDark })
       this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'] })
       this.setState({
-        link: ['flag-india', 'buefy', 'flag-india', 'swift', 'graywhite', 'default', 'vue', 'moltack', 'gruvbox_light', 'vue']
+        link: ['vue', 'buefy', 'flag-india', 'swift', 'graywhite', 'default', 'vue', 'moltack', 'gruvbox_light', 'vue']
       })
     }
     else {
       this.setState({ lightOurDark: iconLight })
       this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'] })
       this.setState({
-        link: ['dark', 'merko', 'highcontrast', 'vue-dark', 'prussian', 'nightowl', 'ayu-mirage', 'react', 'ocean_dark', 'aura']
+        link: ['vue-dark', 'merko', 'highcontrast', '', 'prussian', 'nightowl', 'ayu-mirage', 'react', 'ocean_dark', 'aura']
       })
     }
   }
@@ -99,24 +99,24 @@ class App extends Component {
 
           <div><br id='repositories' /> <h2 className={classN[0]} >Repositories:</h2>
             <div className='imgs-reps'>
-              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=DEV&theme=' + link[Math.floor(Math.random() * 10)] + '&show_icons=true'} /></a>
+              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=DEV&theme=' + link[0] + '&show_icons=true'} /></a>
                 <div className='ref-reps'>
                 </div>
               </div>
-              <div className={classN[7]} > <a className='stats' href='' > <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&theme=' + link[Math.floor(Math.random() * 10)] + '&show_icons=true'} /></a>
+              <div className={classN[7]} > <a className='stats' href='' > <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&theme=' + link[0] + '&show_icons=true'} /></a>
                 <div className='ref-reps'>
                 </div>
               </div>
-              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnReact&theme=' + link[Math.floor(Math.random() * 10)] + '&show_icons=true'} /></a>
+              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnReact&theme=' + link[0] + '&show_icons=true'} /></a>
                 <div className='ref-reps'>
                 </div>
               </div>
-              <div className={classN[7]} > <a href='' > <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=cssAndHtml&theme=' + link[Math.floor(Math.random() * 10)] + '&show_icons=true'} /></a>
+              <div className={classN[7]} > <a href='' > <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=cssAndHtml&theme=' + link[0] + '&show_icons=true'} /></a>
                 <div className='ref-reps'>
 
                 </div>
               </div>
-              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=typescript&theme=' + link[Math.floor(Math.random() * 10)] + '&show_icons=true'} /></a>
+              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=typescript&theme=' + link[0] + '&show_icons=true'} /></a>
                 <div className='ref-reps'>
 
                 </div>
