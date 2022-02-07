@@ -1,15 +1,14 @@
 :root{
     /* color dark */
     --dcolor-font-primary: rgb(255, 255, 255);
-    --dcolor-background-primary: rgb(161, 161, 161);
-    --dcolor-font-secondary: rgb(0, 0, 0);
-    --dcolor-background-secondary: rgb(21, 21, 21);
+    --dcolor-background-primary: rgb(0, 0, 0);
+    --dcolor-font-secondary: rgb(255, 255, 255);
+    --dcolor-background-secondary: rgb(34, 34, 34);
     --dcolor-font-menu: rgb(233, 233, 233);
     --dcolor-background-button: rgb(237, 224, 224);
     --dcolor-shadow-h2: rgba(255, 255, 255, 0.3);
     --dcolor-border-h2: rgba(255, 255, 255, 0.513);
 }
-
 /* Dark Color */
 .dh2{
     box-shadow:  -2px 5px 5px var(--dcolor-shadow-h2) ;
