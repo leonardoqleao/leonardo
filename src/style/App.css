@@ -27,12 +27,12 @@
 .mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
   font-size: 20px;
   transition: transform 200ms;
-  transition: background .2s;
+  transition: background .1s;
   padding: 15px;
   display: block;
   text-decoration: none;
 }
-.mdcolor-ul li a:hover { /*trocar por class*/
+.mdcolor-ul li a:hover, .mdcolor-ul-close li a:hover { /*trocar por class*/
   transform: scale(1.05);
 }
 .button-light-dark, .button-light-dark-close{

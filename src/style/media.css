@@ -1,21 +1,6 @@
-.cabecalho-animation {
-    animation: menu 0.2s;
-}
-@keyframes menu {
-    0%   {width: 0px; height: 0px;}
-    10%  {width: 15px;}
-    20%  {width: 30px;}
-    30%  {width: 45px;}
-    40%  {width: 60px;}
-    50%  {width: 75px;}
-    60%  {width: 90px;}
-    70%  {width: 105px;}
-    80%  {width: 120px;}
-    90%  {width: 135px;}
-    100% {width: 150px;}
-}
-.mcolor-ul-li-a, .mdcolor-ul-li-a {
-    animation: menua 0.5s;
+
+ .mcolor-ul-li-a, .mdcolor-ul-li-a {
+    animation: menua 1s;
 }
 @keyframes menua {
     0%   {font-size:0px;}
@@ -184,5 +169,11 @@
         text-align: justify;
         float: center;
         width: 100%;
+    }
+    .cabecalho-animation {
+        animation: menu 0.5s;
+    }
+    @keyframes menu {
+        0%   {width: 0px; height: 0px;}
     }
 }

@@ -90,7 +90,7 @@ class App extends Component {
               <h2 className={classN[0]} >GitHub:</h2>
               <div className='imgs'>
                 <div className='most'>
-                  <img height="300em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=demo&theme=' + link[0] + '&hide_border=true'} />
+                  <img height="200em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&langs_count=8&layout=compact&theme='+link[0]+'&hide_border=true'} />
                 </div>
                 <img className='stats' height="180em" src={'https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=' + link[0] + '&show_icons=true'} />
               </div>
