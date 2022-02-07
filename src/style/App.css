@@ -9,8 +9,14 @@
 .cabecalho {
   position: fixed;
   display: flex;
-}
 
+}
+.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection{
+  background: none;
+}
+.menu-below-700::selection{
+  background: none;
+}
 .menu-below-700 {
   padding: 15px;
 }
@@ -57,4 +63,30 @@
 }
 .menu-below-700:hover, .button-light-dark:hover, .button-light-dark-close:hover{
   cursor: pointer;  
+}
+.imgs-reps{
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  margin-left: 15px;
+
+}.reps, .dreps{
+  padding: 5px;
+  width: 100%;
+  border-radius: 0 0 5px 10px;
+  margin-top: 5px;
+}.ref-reps{
+  text-align: justify;
+  float: right;
+  width: 55%;
+  padding: 10px;
+  height: 100%;
+}.rep-img{
+  float: right;
+}
+.rep-img-1{
+  float: left;
+}
+.rep-img:hover, .rep-img-1:hover{
+  
 }
