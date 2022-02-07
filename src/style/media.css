@@ -1,3 +1,6 @@
+.cabecalho-animation {
+    animation: menu 0.2s;
+}
 @keyframes menu {
     0%   {width: 0px; height: 0px;}
     10%  {width: 15px;}
@@ -42,22 +45,17 @@
         height: 500px;
         width: 600px;
     }
-    .rep-img, .rep-img-1{
+    .rep-img{
         height: 250px;
         width: 600px;
-
     }.rep-img{
-        float: right;
-        margin-right: 100px;
         transition: transform 200ms ease-in;
       
     }
     .rep-img-1{
-        float: left;
-        margin-left: 100px;
         transition: transform 200ms ease-in;
     }
-    .rep-img:hover, .rep-img-1:hover{
+    .rep-img:hover{
         transform: scale(1.1);
         
     }
@@ -123,7 +121,7 @@
 }
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
-    .rep-img, .rep-img-1{
+    .rep-img{
         height: 150px;
         width: 350px;
         float: center;
@@ -176,9 +174,7 @@
         display: inline;
         list-style: none;
     }
-    .cabecalho-animation {
-        animation: menu 0.2s;
-    }
+    
     .reps{
         text-align: center;
         float: center;

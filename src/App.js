@@ -21,7 +21,7 @@ class App extends Component {
     super(props);
     this.state = {
       display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''],
-      link: ['vue', 'buefy', 'flag-india', 'swift', 'graywhite', 'default', 'vue', 'moltack', 'gruvbox_light', 'vue'],
+      link: ['vue'],
       classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'],//0-7
       lightOurDark: iconDark,
     }
@@ -32,14 +32,14 @@ class App extends Component {
       this.setState({ lightOurDark: iconDark })
       this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'] })
       this.setState({
-        link: ['vue', 'buefy', 'flag-india', 'swift', 'graywhite', 'default', 'vue', 'moltack', 'gruvbox_light', 'vue']
+        link: ['vue']
       })
     }
     else {
       this.setState({ lightOurDark: iconLight })
       this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'] })
       this.setState({
-        link: ['vue-dark', 'merko', 'highcontrast', '', 'prussian', 'nightowl', 'ayu-mirage', 'react', 'ocean_dark', 'aura']
+        link: ['vue-dark']
       })
     }
   }
@@ -69,7 +69,6 @@ class App extends Component {
               <li className={display[3]} ><a onClick={this.fMenu} className={classN[3]} href='#experience'>EXPERIENCE</a>  </li>
               <li className={display[3]} ><a onClick={this.fMenu} className={classN[3]} href='#projects'>PROJECTS</a>  </li>
               <li className={display[3]} ><a onClick={this.fMenu} className={classN[3]} href='#github'>GITHUB</a>  </li>
-              <li className={display[3]} ><a onClick={this.fMenu} className={classN[3]} href='#repositories'>REPOSITORIES</a></li>
               <li className={display[3]} ><a onClick={this.fMenu} className={classN[3]} href='#education'>EDUCATION</a>  </li>
               <li className={display[3]} ><a onClick={this.fMenu} className={classN[3]} href='#contact'>CONTACT</a>  </li>
             </ul>
@@ -90,43 +89,47 @@ class App extends Component {
             <div>
               <h2 className={classN[0]} >GitHub:</h2>
               <div className='imgs'>
-                <div className='most'> <img height="300em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=demo&theme=' + link[0] + '&hide_border=true'} /></div>
+                <div className='most'>
+                  <img height="300em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&layout=demo&theme=' + link[0] + '&hide_border=true'} />
+                </div>
                 <img className='stats' height="180em" src={'https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=' + link[0] + '&show_icons=true'} />
+              </div>
+              <div className='imgs-reps'>
+                <div className={classN[7]} >
+                  <a href='' >
+                    <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=DEV&theme=' + link[0] + '&show_icons=true'} />
+                  </a>
+                </div>
+                <div className={classN[7]} > <a href='' >
+                  <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&theme=' + link[0] + '&show_icons=true'} />
+                </a>
+                </div>
+                <div className={classN[7]} > <a href='' >
+                  <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnReact&theme=' + link[0] + '&show_icons=true'} />
+                </a>
+                </div>
+                <div className={classN[7]} > <a href='' >
+                  <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=cssAndHtml&theme=' + link[0] + '&show_icons=true'} />
+                </a>
+                </div>
+                <div className={classN[7]} > <a href='' >
+                  <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=typescript&theme=' + link[0] + '&show_icons=true'} />
+                </a>
+                </div>
               </div>
             </div>
             <Github />
           </div>
-
-          <div><br id='repositories' /> <h2 className={classN[0]} >Repositories:</h2>
-            <div className='imgs-reps'>
-              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=DEV&theme=' + link[0] + '&show_icons=true'} /></a>
-                <div className='ref-reps'>
-                </div>
-              </div>
-              <div className={classN[7]} > <a className='stats' href='' > <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&theme=' + link[0] + '&show_icons=true'} /></a>
-                <div className='ref-reps'>
-                </div>
-              </div>
-              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnReact&theme=' + link[0] + '&show_icons=true'} /></a>
-                <div className='ref-reps'>
-                </div>
-              </div>
-              <div className={classN[7]} > <a href='' > <img className='rep-img' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=cssAndHtml&theme=' + link[0] + '&show_icons=true'} /></a>
-                <div className='ref-reps'>
-
-                </div>
-              </div>
-              <div className={classN[7]} > <a href='' > <img className='rep-img-1' height="100em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=typescript&theme=' + link[0] + '&show_icons=true'} /></a>
-                <div className='ref-reps'>
-
-                </div>
-              </div>
-            </div>
+          <div>
+            <br id='education' />
+            <h2 className={classN[0]} >Education:</h2>
+            <Edu />
           </div>
 
-          <div><br id='education' /> <h2 className={classN[0]} >Education:</h2> <Edu /> </div>
-
-          <div><br id='contact' /> <h2 className={classN[0]} >Contact:</h2> <Contact /> </div>
+          <div><br id='contact' />
+            <h2 className={classN[0]} >Contact:</h2>
+            <Contact />
+          </div>
         </div>
       </div>
     );

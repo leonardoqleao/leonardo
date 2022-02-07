@@ -33,7 +33,7 @@
   text-decoration: none;
 }
 .mdcolor-ul li a:hover { /*trocar por class*/
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 .button-light-dark, .button-light-dark-close{
   margin: 10px;
@@ -66,8 +66,8 @@
 .imgs-reps{
   display: flex;
   width: auto;
-  flex-direction: column;
-  margin-left: 15px;
+  flex-direction:column;
+  margin-left: auto;
 
 }.reps, .dreps{
   padding: 5px;
