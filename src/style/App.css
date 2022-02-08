@@ -26,6 +26,8 @@
   transition: transform 200ms;
   transition: background .1s;
   padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: block;
   text-decoration: none;
 }
@@ -61,29 +63,21 @@
 .menu-below-700:hover, .button-light-dark:hover, .button-light-dark-close:hover{
   cursor: pointer;  
 }
-.imgs-reps{
-  width: auto;
-  display: inline-block;
-}.reps, .dreps{
+.reps, .dreps{
   padding: 5px;
   border-radius: 0 0 5px 10px;
   margin-top: 5px;
-}.ref-reps{ /*para testo no repositorio*/
-  text-align: justify;
-  float: right;
-  width: 55%;
-  padding: 10px;
-  height: 100%;
-}.rep-img{
-  display: block;
-  width: 40%;
-  transition: transform 200ms;
-
-}.rep-img:hover{
-  transform: scale(1.02);
-  box-shadow: -5px 10px 100px rgba(0, 0, 0, 0.171);
-  border-radius: 5px;
-
+}
+.imgs-reps{
+  text-align: center;
+  padding: 15px;
+  max-width: 100%;
+  height: 800%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  justify-content: space-around;
 }
 /*
 Aba para animar um contador de tempo
@@ -102,3 +96,5 @@ Aba para animar um contador de tempo
     width: 100%;
   }
 } */
+
+

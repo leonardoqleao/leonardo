@@ -51,14 +51,14 @@ class App extends Component {
       this.setState({ display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''] })
     }
   }
-  
+
   render() {
     let { lightOurDark } = this.state;
     let { classN } = this.state;
     let { display } = this.state;
     let { link } = this.state
     return (
-      
+
       <div className={classN[5]}>
         <header className={classN[1] + ' ' + display[2]}>
           <div onClick={this.fMenu} className={classN[2]}>
@@ -99,25 +99,29 @@ class App extends Component {
 
               <div className='imgs-reps'>
                 <div className={classN[7]} >
-                  <a href='' >
-                    <img className='rep-img'  width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=DEV&theme=' + link[0] + '&show_icons=true'} />
+                  <a href='https://github.com/leonardoqleao/DEV' >
+                    <img className='rep-img' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=DEV&theme=' + link[0] + '&show_icons=true'} />
                   </a>
                 </div>
-                <div className={classN[7]} > <a href='' >
-                  <img className='rep-img' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&theme=' + link[0] + '&show_icons=true'} />
-                </a>
+                <div className={classN[7]} >
+                  <a href='https://github.com/leonardoqleao/leonardo' >
+                    <img className='rep-img' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=leonardo&theme=' + link[0] + '&show_icons=true'} />
+                  </a>
                 </div>
-                <div className={classN[7]} > <a href='' >
-                  <img className='rep-img'  width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnReact&theme=' + link[0] + '&show_icons=true'} />
-                </a>
+                <div className={classN[7]} >
+                  <a href='https://github.com/leonardoqleao/learnReact' >
+                    <img className='rep-img' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=learnReact&theme=' + link[0] + '&show_icons=true'} />
+                  </a>
                 </div>
-                <div className={classN[7]} > <a href='' >
-                  <img className='rep-img'  width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=cssAndHtml&theme=' + link[0] + '&show_icons=true'} />
-                </a>
+                <div className={classN[7]} >
+                  <a href='https://github.com/leonardoqleao/cssAndHtml' >
+                    <img className='rep-img' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=cssAndHtml&theme=' + link[0] + '&show_icons=true'} />
+                  </a>
                 </div>
-                <div className={classN[7]} > <a href='' >
-                  <img className='rep-img'  width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=typescript&theme=' + link[0] + '&show_icons=true'} />
-                </a>
+                <div className={classN[7]} >
+                  <a href='https://github.com/leonardoqleao/typescript' >
+                    <img className='rep-img' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/pin/?username=leonardoqleao&repo=typescript&theme=' + link[0] + '&show_icons=true'} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -130,7 +134,7 @@ class App extends Component {
           </div>
 
           <div><br id='contact' />
-            <h2 className={classN[0]} onClick={console.log('anota meu número, 62 991820243')} >Contact:</h2>
+            <h2 className={classN[0]} >Contact:</h2>
             <Contact />
           </div>
         </div>
