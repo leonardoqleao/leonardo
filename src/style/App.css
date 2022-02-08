@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}*::selection{
+  background-color: rgba(52, 179, 145, 0.378);
 }
 .App {
   text-align: center;
@@ -10,8 +12,11 @@
   width: 100%;
   display: flex;
 }
-.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection{
+.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection, h2::selection, img::selection{
   background: none;
+  pointer-events: none;
+}.cabecalho, .mcolor-ul-li-a ,.mdcolor-ul-li-a, .menu-below-700, h2, img{
+  cursor: default;
 }
 .menu-below-700 {
   padding: 15px;
