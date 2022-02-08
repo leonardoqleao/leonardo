@@ -6,8 +6,8 @@
 .App {
   text-align: center;
 }
-.cabecalho {
-  position: fixed;
+.cabecalho{
+  width: 100%;
   display: flex;
 }
 .cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection{
@@ -38,7 +38,7 @@
 }
 .bcolor, .bdcolor {
   box-sizing:border-box;
-  height: 100vh;
+  height: 94vh;
   font-size: calc(10px + 1.5vmin);
   overflow-y: scroll;
   scrollbar-width: none;
@@ -77,4 +77,28 @@
 }.rep-img{
   display: block;
   width: 40%;
+  transition: transform 200ms;
+
+}.rep-img:hover{
+  transform: scale(1.02);
+  box-shadow: -5px 10px 100px rgba(0, 0, 0, 0.171);
+  border-radius: 5px;
+
 }
+/*
+Aba para animar um contador de tempo
+.test{
+  display: block;
+  height: 1%;
+  background: rgb(255, 255, 255);
+  animation: test .5s;
+  position: absolute;
+  align-self: flex-end;
+}@keyframes test{
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+} */

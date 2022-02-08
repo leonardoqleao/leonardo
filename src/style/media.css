@@ -25,13 +25,15 @@
     }
     .cabecalho{
         width: 100%;
+        position: relative;
+        display: flex;
     }
     .imgs img{ /*trocar por class*/
         height: 400px;
         width: 500px;
     }
     .rep-img{
-        height: 250px;
+        height: auto;
         width: 600px;
     }
    
@@ -98,8 +100,9 @@
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
     .rep-img{
-        height: 145px;
         width: 360px;
+        height: auto;
+
         float: center;
     }.stats{
         height: auto;
@@ -109,7 +112,7 @@
         width: 95%;
     }.stats2{
         width: 400px;
-        height: 240px;
+        height: autos;
     }
     .menu-below-700 {
         padding: 10px;
@@ -120,27 +123,29 @@
     .menu-below-700::selection{
       background: none;
     }
-    .body {
+    .bcolor, .bdcolor {
+        height: 100vh;
         display: block;
         font-size: calc(10px + 1vmin);
         overflow-x: hidden;
     }
-    .cabecalho{ 
+    .cabecalho{
+        position: fixed;
         width: auto;
         height: auto;
-        align-self: center;
+        float: left;
         justify-content: space-between;
     }  
     .button-light-dark{
         width: 30px;
-        height: 30px;
+        height: auto;
         margin: 7px;
         display: none;
     }
     /*animação*/
     .button-light-dark-close{
         width: 30px;
-        height: 30px;
+        height: auto;
         margin: 7px;
     }
     .cabecalho-close{
@@ -173,6 +178,7 @@
     .cabecalho-animation {
         animation: menu 0.5s;
     }
+    
     @keyframes menu {
         0%   {width: 0px; height: 0px;}
     }
