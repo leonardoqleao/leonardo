@@ -100,7 +100,7 @@
         display: inline;
         list-style: none;
       }
-    .reps{
+    .reps, .dreps{
         text-align: center;
         width: 100%;
     }
