@@ -4,16 +4,13 @@
   box-sizing: border-box;
 }
 .App {
-  text-align: left;
+  text-align: center;
 }
 .cabecalho {
   position: fixed;
   display: flex;
 }
-.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection{
-  background: none;
-}
-.menu-below-700::selection{
+.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection{
   background: none;
 }
 .menu-below-700 {
@@ -27,12 +24,12 @@
 .mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
   font-size: 20px;
   transition: transform 200ms;
-  transition: background .2s;
+  transition: background .1s;
   padding: 15px;
   display: block;
   text-decoration: none;
 }
-.mdcolor-ul li a:hover { /*trocar por class*/
+.mdcolor-ul li a:hover, .mdcolor-ul-close li a:hover { /*trocar por class*/
   transform: scale(1.05);
 }
 .button-light-dark, .button-light-dark-close{
@@ -50,34 +47,34 @@
   display: none;
 }
 .stats {
-  padding-top: 60px;
+  padding: 10px;
 }
 .imgs {
   text-align: center;
-  padding: 40px auto;
+  padding: 10px;
 }
-.imgs img, #stats { /*trocar por class*/
+.imgs img{ /*trocar por class*/
   display: inline;
   padding: auto;
+  text-align: center;
 }
 .menu-below-700:hover, .button-light-dark:hover, .button-light-dark-close:hover{
   cursor: pointer;  
 }
 .imgs-reps{
-  display: flex;
   width: auto;
-  flex-direction:column;
-  margin-left: auto;
-
+  display: inline-block;
 }.reps, .dreps{
   padding: 5px;
-  width: 100%;
   border-radius: 0 0 5px 10px;
   margin-top: 5px;
-}.ref-reps{
+}.ref-reps{ /*para testo no repositorio*/
   text-align: justify;
   float: right;
   width: 55%;
   padding: 10px;
   height: 100%;
+}.rep-img{
+  display: block;
+  width: 40%;
 }

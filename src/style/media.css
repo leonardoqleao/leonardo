@@ -1,21 +1,6 @@
-.cabecalho-animation {
-    animation: menu 0.2s;
-}
-@keyframes menu {
-    0%   {width: 0px; height: 0px;}
-    10%  {width: 15px;}
-    20%  {width: 30px;}
-    30%  {width: 45px;}
-    40%  {width: 60px;}
-    50%  {width: 75px;}
-    60%  {width: 90px;}
-    70%  {width: 105px;}
-    80%  {width: 120px;}
-    90%  {width: 135px;}
-    100% {width: 150px;}
-}
-.mcolor-ul-li-a, .mdcolor-ul-li-a {
-    animation: menua 0.5s;
+
+ .mcolor-ul-li-a, .mdcolor-ul-li-a {
+    animation: menua 1s;
 }
 @keyframes menua {
     0%   {font-size:0px;}
@@ -42,23 +27,14 @@
         width: 100%;
     }
     .imgs img{ /*trocar por class*/
-        height: 500px;
-        width: 600px;
+        height: 400px;
+        width: 500px;
     }
     .rep-img{
         height: 250px;
         width: 600px;
-    }.rep-img{
-        transition: transform 200ms ease-in;
-      
     }
-    .rep-img-1{
-        transition: transform 200ms ease-in;
-    }
-    .rep-img:hover{
-        transform: scale(1.1);
-        
-    }
+   
     .mdcolor-ul li, .mdcolor-ul-close li{ /*trocar por class*/
         display: inline-block;
     }
@@ -77,11 +53,12 @@
         padding: 15px;
     }.cabecalho{
         height: 50px;
+    }.stats{
+        max-height: 300px;
     }
     .reps, .dreps{
         text-align: center;
-        float: center;
-        width: 100%;
+        width: 45%;
     }
     .ref-reps{
         text-align: justify;
@@ -110,7 +87,6 @@
       }
     .reps{
         text-align: center;
-        float: center;
         width: 100%;
     }
     .ref-reps{
@@ -122,9 +98,18 @@
 /* mobile responsivity 700 */
 @media (max-width: 700px) {
     .rep-img{
-        height: 150px;
-        width: 350px;
+        height: 145px;
+        width: 360px;
         float: center;
+    }.stats{
+        height: auto;
+        width: 95%;
+        float: center;
+    }.stats1{
+        width: 95%;
+    }.stats2{
+        width: 400px;
+        height: 240px;
     }
     .menu-below-700 {
         padding: 10px;
@@ -184,5 +169,11 @@
         text-align: justify;
         float: center;
         width: 100%;
+    }
+    .cabecalho-animation {
+        animation: menu 0.5s;
+    }
+    @keyframes menu {
+        0%   {width: 0px; height: 0px;}
     }
 }
