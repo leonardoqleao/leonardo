@@ -25,9 +25,7 @@
   font-size: 20px;
   transition: transform 200ms;
   transition: background .1s;
-  padding: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 15px 25px 15px 25px;
   display: block;
   text-decoration: none;
 }
@@ -40,12 +38,13 @@
 }
 .bcolor, .bdcolor {
   box-sizing:border-box;
-  height: 94vh;
+  height: calc(100vh - 55px);
+  display: block;
   font-size: calc(10px + 1.5vmin);
-  overflow-y: scroll;
+  overflow-y:scroll;
   scrollbar-width: none;
 }
-.bcolor::-webkit-scrollbar, .bdcolor::-webkit-scrollbar {
+.bcolor::-webkit-scrollbar, .bdcolor::-webkit-scrollbar, html::-webkit-scrollbar{
   display: none;
 }
 .stats {

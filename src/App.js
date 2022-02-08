@@ -92,7 +92,7 @@ class App extends Component {
               <div className='imgs'>
                 <img className='stats2' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&langs_count=8&layout=compact&theme=' + link[0] + '&hide_border=true'} />
                 <img className='stats' width="45%" height="60em" src={'https://github-readme-streak-stats.herokuapp.com/?user=leonardoqleao&theme=' + link[0] + '&date_format=M%20j%5B%2C%20Y%5D&hide_border=true'} />
-                <img className='stats' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=' + link[0] + '&show_icons=true'} />
+                <img className='stats' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api?username=leonardoqleao&count_private=true&theme=' + link[0] + '&show_icons=true&hide_border=true'} />
               </div>
               <img className='stats1' align="center" width="90%" src={'https://activity-graph.herokuapp.com/graph?username=leonardoqleao&theme=github&bg_color=' + link[1] + '&hide_border=true&color=' + link[2]} />
 

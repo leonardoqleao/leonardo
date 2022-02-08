@@ -32,3 +32,6 @@
 .mbdcolor:hover{
     background-color: var(--dcolor-background-button);
 }
+.App{
+    background-color: var(--dcolor-background-secondary);
+}

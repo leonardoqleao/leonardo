@@ -39,6 +39,8 @@
         background: none;
     }
     .cabecalho{
+        max-height: 55px;
+        min-height: 55px;
         width: 100%;
         position: relative;
         display: flex;
@@ -67,7 +69,8 @@
 @media (max-width: 1100px) {
     .mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
         font-size: 15px;
-        padding: 15px;
+        padding: 17px 15px 17px 15px;
+
     }.cabecalho{
         height: 50px;
     }.stats{
@@ -89,7 +92,7 @@
 }
 @media (max-width: 900px) {
     .mdcolor-ul li a, .mdcolor-ul-close li a,.mcolor-ul-li-a{ /*trocar por class*/
-        padding: 15px 10px 15px 10px;
+        padding: 17px 10px 17px 10px;
         font-size: 15px;
     }
     .cabecalho{
@@ -100,7 +103,7 @@
         display: inline;
         list-style: none;
       }
-    .reps{
+    .reps, .dreps{
         text-align: center;
         width: 100%;
     }
@@ -157,7 +160,6 @@
         height: 100vh;
         display: block;
         font-size: calc(10px + 1vmin);
-        overflow-x: hidden;
     }
     .cabecalho{
         position: fixed;
@@ -210,6 +212,9 @@
     }
     .imgs-reps{
         flex-direction: column;
+    }
+    .mdcolor-ul li a, .mdcolor-ul-close li{
+        text-align: left;
     }
     
     @keyframes menu {
