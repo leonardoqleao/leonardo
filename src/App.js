@@ -45,7 +45,7 @@ class App extends Component {
   }
   fMenu = () => {
     if (this.state.display[0] === 'mdcolor-ul-close') {
-      this.setState({ display: ['mdcolor-ul', 'button-light-dark', 'cabecalho cabecalho-animation', 'cabecalho-animation'] })
+      this.setState({ display: ['mdcolor-ul', 'button-light-dark', 'cabecalho-animation', 'cabecalho-animation'] })
     }
     else {
       this.setState({ display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''] })
