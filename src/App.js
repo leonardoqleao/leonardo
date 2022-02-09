@@ -51,7 +51,6 @@ class App extends Component {
       this.setState({ display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''] })
     }
   }
-
   render() {
     let { lightOurDark } = this.state;
     let { classN } = this.state;
