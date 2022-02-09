@@ -133,7 +133,24 @@ class App extends Component {
 
           <div><br id='contact' />
             <h2 className={classN[0]} >Contact:</h2>
-            <Contact />
+            <div className='cont-geral'>
+              <p className='info'>
+
+              </p>
+              <div className='form'>
+                <form action="/action_page.php">
+                  {/* <label for="fname">First name:</label> */}
+                  {/* <label for="fname">First name:</label> */}
+                  <input type="text" id="full-name" name="fname" placeholder='Nome'/><br /><br />
+                  <input type="text" id="email" name="fname" placeholder='E-mail'/><br /><br />
+                  {/* <label for="fname">First name:</label> */}
+                  <input type="number" id="telefone" name="fname" placeholder='telefone'/><br /><br />
+                  {/* <label for="lname">Last name:</label> */}
+                  <input type="text" id="lname" name="lname" /><br /><br />
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
