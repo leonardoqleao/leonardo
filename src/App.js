@@ -14,7 +14,6 @@ import './style/light.css';
 import './style/teste.css';
 import './style/media.css';
 import './style/index.css';
-
 import { Component } from 'react';
 class App extends Component {
   constructor(props) {
