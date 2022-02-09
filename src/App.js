@@ -14,7 +14,6 @@ import './style/light.css';
 import './style/teste.css';
 import './style/media.css';
 import './style/index.css';
-
 import { Component } from 'react';
 class App extends Component {
   constructor(props) {
@@ -51,7 +50,6 @@ class App extends Component {
       this.setState({ display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''] })
     }
   }
-
   render() {
     let { lightOurDark } = this.state;
     let { classN } = this.state;
