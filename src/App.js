@@ -26,6 +26,20 @@ class App extends Component {
     }
     this.setState({ classN: this.state.dark })
   }
+
+  componentDidCatch() {
+    const tel = document.getElementById('tel') // Seletor do campo de telefone
+
+    tel.addEventListener('keypress', (e) => mascaraTelefone(e.target.value)) // Dispara quando digitado no campo
+    tel.addEventListener('change', (e) => mascaraTelefone(e.target.value)) // Dispara quando autocompletado o campo
+
+    const mascaraTelefone = (valor) => {
+      valor = valor.replace(/\D/g, "")
+      valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2")
+      valor = valor.replace(/(\d)(\d{4})$/, "$1-$2")
+      tel.value = valor // Insere o(s) valor(es) no campo
+    }
+  }
   fLightOurDark = () => {
     if (this.state.lightOurDark === iconLight) {
       this.setState({ lightOurDark: iconDark })
@@ -133,7 +147,24 @@ class App extends Component {
 
           <div><br id='contact' />
             <h2 className={classN[0]} >Contact:</h2>
-            <Contact />
+            <div className='cont-geral'>
+              <p className='info'>
+
+              </p>
+              <div className='geral-contact'>
+                <form className='form'>
+                  {/* <label for="fname">First name:</label> */}
+                  {/* <label for="fname">First name:</label> */}
+                  <input type="text" id="full-name" name="fname" placeholder='Nome' /><br /><br />
+                  <input type="text" id="email" name="fname" placeholder='E-mail' /><br /><br />
+                  {/* <label for="fname">First name:</label> */}
+                  <input type="tel" id="tel" name="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required/><br /><br />
+                  {/* <label for="lname">Last name:</label> */}
+                  <input type="text" id="msg" name="lname" /><br /><br />
+                  <input type="submit" id='env'value="Submit" />
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
