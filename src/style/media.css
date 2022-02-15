@@ -53,7 +53,7 @@
         height: auto;
         width: 650px;
     }
-   
+
     .mdcolor-ul li, .mdcolor-ul-close li{ /*trocar por class*/
         display: inline-block;
     }
