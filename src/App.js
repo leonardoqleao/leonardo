@@ -46,7 +46,7 @@ class App extends Component {
     // alert('email: ' + this.state.email);
     // alert('telefone: ' + this.state.telefone);
     // alert('assunto: ' + this.state.assunto);
-    Axios.post('http://localhost:2222/form/', {
+    Axios.post('http://160.238.36.223:2222/form/', {
       nome: this.state.nome,
       email: this.state.email,
       telefone: this.state.telefone,
