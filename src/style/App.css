@@ -281,7 +281,7 @@ Aba para animar um contador de tempo
   background: black;
   height: 50vh;
   width: 50vw;
-  border-radius: 20px;
+  border-radius: 10px;
   color: white;
   display: flex;
   flex-direction: column-reverse;
@@ -295,23 +295,23 @@ Aba para animar um contador de tempo
 
 
 .c2 {
-  width: 100%;
+  margin: 0 10px 0 10px ;
+  width: calc(100% - 20px);
   height: 2%;
   /* background: #00ff66; */
   border-radius: 5px;
   /* position: relative; */
-  animation:  arroz 5s;
+  animation:  arroz 7s;
+  background-color: rgb(0, 0, 0);
 }
 @keyframes arroz {
   0% {
-    width: 0%; height: 1%;
-    background-color: green;
-  }
-  50%{
-
+    width: 0%; height: 1px;
+    background-color: rgb(255, 255, 255);
+  }50%{
+    background-color: rgb(255, 255, 255);
   }
   100% {
-    width: 100%; height: 1%;
-    background-color: red;
+    width: calc(100% - 20px); height: 1px;
   }
 }

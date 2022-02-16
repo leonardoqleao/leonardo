@@ -24,7 +24,11 @@ class App extends Component {
     }
   }
 
+  // componentDidMount(){
+  //   setTimeout{
 
+  //   }
+  // }
   handleFormNome = (event) => {
     this.setState({ nome: event.target.value })
   }
@@ -42,7 +46,7 @@ class App extends Component {
     // alert('email: ' + this.state.email);
     // alert('telefone: ' + this.state.telefone);
     // alert('assunto: ' + this.state.assunto);
-    Axios.post('http://localhost:3001/api/form', {
+    Axios.post('http://localhost:2222/form/', {
       nome: this.state.nome,
       email: this.state.email,
       telefone: this.state.telefone,
@@ -83,14 +87,14 @@ class App extends Component {
     return (
 
       <div className={classN[5]}>
-        <div className='mother'>
+        {/* <div className='mother'>
           <div className='c1'>
             <h1>olá</h1>
             <div className='c2'>
 
             </div>
           </div>
-        </div>
+        </div> */}
         <header className={classN[1] + ' ' + display[2]}>
           <div onClick={this.fMenu} className={classN[2]}>
             <svg id='svg' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
