@@ -3,7 +3,7 @@
     --dcolor-font-primary: rgb(255, 255, 255);
     --dcolor-background-primary: rgb(0, 0, 0);
     --dcolor-font-secondary: rgb(255, 255, 255);
-    --dcolor-background-secondary: rgb(34, 34, 34);
+    --dcolor-background-secondary: rgb(39, 56, 73) ;
     --dcolor-font-menu: rgb(233, 233, 233);
     --dcolor-background-button: rgb(237, 224, 224);
     --dcolor-shadow-h2: rgba(255, 255, 255, 0.3);
@@ -11,7 +11,7 @@
 }
 /* Dark Color */
 .dh2{
-    box-shadow:  -2px 5px 5px var(--dcolor-shadow-h2) ;
+    box-shadow:  -4px 5px 5px var(--dcolor-shadow-h2) ;
     border-bottom: solid calc(1px + 0.1vmin) var(--dcolor-border-h2) ;
     border-left: solid calc(1px + 0.1vmin) var(--dcolor-border-h2)  ;
 }
@@ -31,4 +31,7 @@
 }
 .mbdcolor:hover{
     background-color: var(--dcolor-background-button);
+}
+.App{
+    background-color: var(--dcolor-background-secondary);
 }
