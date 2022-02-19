@@ -10,14 +10,14 @@ import { Component } from 'react';
 import Axios from 'axios';
 
 class App extends Component {
-  constructor(props) {
+  constructor(props) {//Construtor onde estão listadas todos os arrays usados nas animações, cada objeto representa uma função na página
     super(props);
     this.state = {
       nome: '',
-      display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''],
-      link: ['vue', 'c8c8c8', '000'],
-      classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'],//0-7
-      lightOurDark: iconDark,
+      display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''], // array = 0-3
+      link: ['vue-dark', '333849', 'fff'], //array = 0=2
+      classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'],// array = 0-7
+      lightOurDark: iconLight,
       email: '',
       telefone: '',
       assunto: '',
@@ -55,15 +55,15 @@ class App extends Component {
     event.preventDefault();
     this.setState({value: ''});
   }
-  fLightOurDark = () => {
-    if (this.state.lightOurDark === iconLight) {
+  fLightOurDark = () => {// Função responsavel por alterar entre tela clara e escura. 
+    if (this.state.lightOurDark === iconLight) {//Propriedade responsavel pela página clara
       this.setState({ lightOurDark: iconDark })
       this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'] })
       this.setState({
         link: ['vue', 'c8c8c8', '000']
       })
     }
-    else {
+    else {//Propriedade responsavel pela página escura
       this.setState({ lightOurDark: iconLight })
       this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'] })
       this.setState({
@@ -71,11 +71,11 @@ class App extends Component {
       })
     }
   }
-  fMenu = () => {
-    if (this.state.display[0] === 'mdcolor-ul-close') {
+  fMenu = () => {// Função responsavel por mostrar e ocultar o menu. 'apenas na responsividade mobile'
+    if (this.state.display[0] === 'mdcolor-ul-close') {//Propriedade responsavel pela página clara
       this.setState({ display: ['mdcolor-ul', 'button-light-dark', 'cabecalho-animation', 'cabecalho-animation'] })
     }
-    else {
+    else {//Propriedade responsavel pela página escura
       this.setState({ display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''] })
     }
   }
