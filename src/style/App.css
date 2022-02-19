@@ -6,8 +6,11 @@
 *::selection{/*Alterando a cor de fundo dos textos selecionados.*/
   background-color: rgba(52, 179, 145, 0.378);
 }
-input[type=number]::-webkit-inner-spin-button { /*Removendo as setas do input number*/
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { /*Removendo as setas do input number*/
   -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .App {/*Classe responsável por toda a tela.*/
   text-align: center;
@@ -176,6 +179,8 @@ input[type=number]::-webkit-inner-spin-button { /*Removendo as setas do input nu
 #git:hover, #gmail:hover, #linkdin:hover, #telegram:hover, #whatsapp:hover{ 
   transform: scale(1.15);
 }
+
+/*Animação dos input*/
 #label-full-name, #label-email, #label-tel {
   position: absolute;
   top: 0;
