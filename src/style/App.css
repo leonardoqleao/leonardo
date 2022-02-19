@@ -22,6 +22,7 @@ input[type="number"] {
 .cabecalho{/*Classe responsável por todo o cabeçalho*/
   width: 100%;
   display: flex;
+  overflow: hidden;
 }
 .cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection, h2::selection, img::selection{/*Removendo a seleção de texto do cabeçalho*/
   background: none;
