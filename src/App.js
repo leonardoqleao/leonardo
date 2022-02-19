@@ -10,7 +10,7 @@ import { Component } from 'react';
 import Axios from 'axios';
 
 class App extends Component {
-  constructor(props) {//Construtor onde estão listadas todos os arrays usados nas animações, cada objeto representa uma função na página
+  constructor(props) {//Construtor onde estão listadas todos os arrays usados nas animações e funções, cada objeto representa uma função na página
     super(props);
     this.state = {
       nome: '',
@@ -24,28 +24,31 @@ class App extends Component {
     }
   }
 
-  // componentDidMount(){
-  //   setTimeout{
 
-  //   }
-  // }
-  handleFormNome = (event) => {
+  //Funções responsáveis pelas funcionalidades dá página
+
+  //Reponsavel por pegar e armazenar em os dados digitado no campo nome
+  handleFormNome = (event) => { 
     this.setState({ nome: event.target.value })
   }
+
+  //Reponsavel por pegar e armazenar em os dados digitado no campo email
   handleFormEmail = (event) => {
     this.setState({ email: event.target.value })
   }
+
+  //Reponsavel por pegar e armazenar em os dados digitado no campo telefone
   handleFormTelefone = (event) => {
     this.setState({ telefone: event.target.value })
   }
+
+  //Reponsavel por pegar e armazenar em os dados digitado no campo assunto
   handleFormAsstunto = (event) => {
     this.setState({ assunto: event.target.value })
   }
-  submit = (event) => {
-    // alert('nome: ' + this.state.nome);
-    // alert('email: ' + this.state.email);
-    // alert('telefone: ' + this.state.telefone);
-    // alert('assunto: ' + this.state.assunto);
+
+  //responsavel por enviar os dados para porta selecionada
+  submit = (event) => { 
     Axios.post('http://160.238.36.223:2222/form/', {
       nome: this.state.nome,
       email: this.state.email,
@@ -55,29 +58,36 @@ class App extends Component {
     event.preventDefault();
     this.setState({value: ''});
   }
-  fLightOurDark = () => {// Função responsavel por alterar entre tela clara e escura. 
-    if (this.state.lightOurDark === iconLight) {//Propriedade responsavel pela página clara
+
+
+  //Funções responsáveis pela estética dá página.
+
+  //Função responsavel por alterar entre tela clara e escura. 
+  fLightOurDark = () => {
+    //Propriedade responsavel pela página clara
+    if (this.state.lightOurDark === iconLight) {
       this.setState({ lightOurDark: iconDark })
       this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'] })
-      this.setState({
-        link: ['vue', 'c8c8c8', '000']
-      })
+      this.setState({ link: ['vue', 'c8c8c8', '000'] })
     }
-    else {//Propriedade responsavel pela página escura
+    //Propriedade responsavel pela página escura
+    else {
       this.setState({ lightOurDark: iconLight })
       this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'] })
-      this.setState({
-        link: ['vue-dark', '333849', 'fff']
-      })
+      this.setState({ link: ['vue-dark', '333849', 'fff'] })
     }
   }
-  fMenu = () => {// Função responsavel por mostrar e ocultar o menu. 'apenas na responsividade mobile'
-    if (this.state.display[0] === 'mdcolor-ul-close') {//Propriedade responsavel pela página clara
+
+  // Função responsavel por mostrar e ocultar o menu. 'apenas na responsividade mobile'.
+  fMenu = () => {
+    //Propriedade responsavel pela página clara
+    this.state.display[0] === 'mdcolor-ul-close'? (
       this.setState({ display: ['mdcolor-ul', 'button-light-dark', 'cabecalho-animation', 'cabecalho-animation'] })
-    }
-    else {//Propriedade responsavel pela página escura
+    )
+    //Propriedade responsavel pela página escura
+    :(
       this.setState({ display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''] })
-    }
+    )
   }
   render() {
     let { lightOurDark } = this.state;
@@ -87,7 +97,8 @@ class App extends Component {
     return (
 
       <div className={classN[5]}>
-        {/* <div className='mother'>
+        {/* Aba ainda em desenvolviemnto!
+         <div className='mother'>
           <div className='c1'>
             <h1>olá</h1>
             <div className='c2'>

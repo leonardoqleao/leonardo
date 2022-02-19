@@ -2,31 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}*::selection{
+}
+*::selection{/*Alterando a cor de fundo dos textos selecionados.*/
   background-color: rgba(52, 179, 145, 0.378);
 }
-.App {
+input[type=number]::-webkit-inner-spin-button { /*Removendo as setas do input number*/
+  -webkit-appearance: none;
+}
+.App {/*Classe responsável por toda a tela.*/
   text-align: center;
 }
-.cabecalho{
+.cabecalho{/*Classe responsável por todo o cabeçalho*/
   width: 100%;
   display: flex;
 }
-.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection, h2::selection, img::selection{
+.cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection, h2::selection, img::selection{/*Removendo a seleção de texto do cabeçalho*/
   background: none;
   pointer-events: none;
-}.cabecalho, .mcolor-ul-li-a ,.mdcolor-ul-li-a, .menu-below-700, h2, img{
+}.cabecalho, .mcolor-ul-li-a ,.mdcolor-ul-li-a, .menu-below-700, h2, img{/*Alterando o tipo de cursur do cabelho*/
   cursor: default;
 }
 .menu-below-700 {
   padding: 15px;
 }
-.mdcolor-ul, .mdcolor-ul-close{ /*trocar por class*/
+.mdcolor-ul, .mdcolor-ul-close{ 
   max-width: 90%;
   display: inline;
   list-style: none;
 }
-.mdcolor-ul li a, .mdcolor-ul-close li a{ /*trocar por class*/
+.mdcolor-ul li a, .mdcolor-ul-close li a{ 
   font-size: 20px;
   transition: transform 200ms;
   transition: background .1s;
@@ -34,7 +38,7 @@
   display: block;
   text-decoration: none;
 }
-.mdcolor-ul li a:hover, .mdcolor-ul-close li a:hover { /*trocar por class*/
+.mdcolor-ul li a:hover, .mdcolor-ul-close li a:hover { 
   transform: scale(1.05);
 }
 .button-light-dark, .button-light-dark-close{
@@ -51,14 +55,14 @@
 .bcolor::-webkit-scrollbar, .bdcolor::-webkit-scrollbar, html::-webkit-scrollbar{
   display: none;
 }
-.stats {
+.stats { /*Aba GitHub*/
   padding: 10px;
 }
 .imgs {
   text-align: center;
   padding: 10px;
 }
-.imgs img{ /*trocar por class*/
+.imgs img{ 
   display: inline;
   padding: auto;
   text-align: center;
@@ -81,25 +85,6 @@
   flex-direction: row-reverse;
   align-content: space-between;
   justify-content: space-around;
-}
-.cont-gearl{
-  min-width: 100vh;
-  max-height: 40vh;
-  background-color: black;/* cor fixa*/
-
-}
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-#full-name:a{
-  animation: teste 2s;
-}@keyframes teste {
-  0% {
-    margin-left: 0;
-  }
-  100%{
-    margin-left: 10px;
-  }
 }
 
 
@@ -162,6 +147,8 @@ input[type=number]::-webkit-inner-spin-button {
   max-height: 61px;
   text-align: left;
 }
+
+
 #git{ /*aba contato, icone referencial GitHub */
   width: 78px;
   transition: transform 150ms;
@@ -186,8 +173,8 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0 5px 0 10px;
   transition: transform 150ms;
 }
-#git:hover, #gmail:hover, #linkdin:hover, #telegram:hover, #whatsapp:hover{
-  transform: scale(1.1);
+#git:hover, #gmail:hover, #linkdin:hover, #telegram:hover, #whatsapp:hover{ 
+  transform: scale(1.15);
 }
 #label-full-name, #label-email, #label-tel {
   position: absolute;
@@ -227,7 +214,7 @@ input[type=number]::-webkit-inner-spin-button {
   top: -24px;
   color: #00ff26;
 }
-#env {
+#env {/*Responsavel pelo botão de enviar*/
   float: left;
   padding: 8px 42px;
   background: #ebebeb;
@@ -237,13 +224,14 @@ input[type=number]::-webkit-inner-spin-button {
   border: none;
 }
 #env:hover{
+  transition: background 300ms;
   background: #00ff26;
 }
 #env:active{
   background: rgb(0, 0, 0);
   color: #ebebeb;
   border: solid 2px white;
-  }
+}
 
 /*
 Aba para animar um contador de tempo
@@ -264,7 +252,7 @@ Aba para animar um contador de tempo
 } */
 
 
-
+/* Style responsavel pela pop-up unicial BETA, projeto ainda em andamento*/
 .mother {
   position: absolute;
   width: 100vw;
@@ -275,7 +263,6 @@ Aba para animar um contador de tempo
   align-items: center;
   
 }
-
 .c1 {
   position: relative;
   background: black;
@@ -287,13 +274,6 @@ Aba para animar um contador de tempo
   flex-direction: column-reverse;
   justify-content: flex-end;
 }
-
-
-
-
-
-
-
 .c2 {
   margin: 0 10px 0 10px ;
   width: calc(100% - 20px);
