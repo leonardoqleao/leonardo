@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 3.125rem #000000 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
 *::selection{/*Alterando a cor de fundo dos textos selecionados.*/
   background-color: rgba(52, 179, 145, 0.378);
 }
@@ -135,7 +139,9 @@ input[type="number"] {
   align-content: flex-start;
   align-items: flex-start;
 }
-
+.input-field{
+  width: 20vw;
+}
 .input-def {
   width: 100%;
   position: relative;

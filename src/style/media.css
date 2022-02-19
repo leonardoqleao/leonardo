@@ -53,14 +53,12 @@
         height: auto;
         width: 650px;
     }
-
     .mdcolor-ul li, .mdcolor-ul-close li{ /*trocar por class*/
         display: inline-block;
     }
     .menu{
         margin: auto;
-    }
-    
+    }    
 }
 
   
@@ -89,6 +87,11 @@
         height: auto;
         width: 430px;
     }
+    .input-field{
+        width: 40vw;
+    }
+    
+    
 }
 @media (max-width: 900px) {
     .mdcolor-ul li a, .mdcolor-ul-close li a,.mcolor-ul-li-a{ /*trocar por class*/
@@ -219,6 +222,9 @@
     
     @keyframes menu {
         0%   {width: 0px; height: 0px;}
+    }
+    .input-field{
+        width: 70vw;
     }
 }
 @media (max-width: 360px) {
