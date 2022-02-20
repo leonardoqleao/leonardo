@@ -25,7 +25,6 @@ class App extends Component {
     }
   }
 
-
   //Funções responsáveis pelas funcionalidades dá página
 
   //Responsável por pegar e armazenar em os dados digitado no campo nome
@@ -50,7 +49,7 @@ class App extends Component {
 
   //responsavel por enviar os dados para porta selecionada
   submit = (event) => { 
-    Axios.post('http://160.238.36.223:2222/form/', {
+    Axios.post('http://localhost:2222/form/', {
       nome: this.state.nome,
       email: this.state.email,
       telefone: this.state.telefone,
