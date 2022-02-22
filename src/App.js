@@ -1,5 +1,6 @@
 import iconDark from './img/iconmonstreyedark.svg';
 import iconLight from './img/iconmonstreyewhite.svg';
+import './style/testBootstrap.css'
 import './style/App.css';
 import './style/dark.css';
 import './style/light.css';
@@ -128,15 +129,25 @@ class App extends Component {
         </header>
         <div className={classN[4]}>
 
-          <div><br id='personal' /><h2 className={classN[0]}>Personal Statement:</h2> </div>
+          <div><br id='personal' />
+          
+          <h2 className={classN[0]}>Personal Statement:</h2> </div>
 
-          <div><br id='experience' /> <h2 className={classN[0]}>Experience:</h2> </div>
+          <div><br id='experience' /> 
+          <div class="b-example-divider"></div>
+          <h2 className={classN[0]}>Experience:</h2> </div>
 
-          <div><br id='projects' /> <h2 className={classN[0]}>Projects:</h2> </div>
+          <div><br id='projects' /> 
+          <div class="b-example-divider"></div>
+          <h2 className={classN[0]}>Projects:</h2> </div>
 
           <div><br id='github' />
+          
             <div>
-              <h2 className={classN[0]} >GitHub:</h2>
+              
+              
+              <h2 className={classN[0]}>GitHub:</h2>
+              <div class="b-example-divider"></div>
               <div className='imgs'>
                 <img className='stats2' width="45%" height="60em" src={'https://github-readme-stats.vercel.app/api/top-langs/?username=leonardoqleao&langs_count=8&layout=compact&theme=' + link[0] + '&hide_border=true'} />
                 <img className='stats' width="45%" height="60em" src={'https://github-readme-streak-stats.herokuapp.com/?user=leonardoqleao&theme=' + link[0] + '&date_format=M%20j%5B%2C%20Y%5D&hide_border=true'} />
@@ -179,8 +190,10 @@ class App extends Component {
             <h2 className={classN[0]} >Education:</h2>
           </div>
           <br id='contact' />
+          
           <h2 className={classN[0]} >Contato:</h2>
           <div className='contato'>
+          <div class="b-example-divider"></div> 
             <div>
               <div className='geral-contact'>
                 <div className='link-image'>
