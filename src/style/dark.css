@@ -1,7 +1,7 @@
 :root{
     /* color dark */
     --dcolor-font-primary: rgb(255, 255, 255);
-    --dcolor-background-primary: rgba(0, 0, 0, 0.50);
+    --dcolor-background-primary: rgba(0, 0, 0, 0.80);
     --dcolor-font-secondary: rgb(255, 255, 255);
     --dcolor-background-secondary: rgb(39, 56, 73) ;
     --dcolor-font-menu: rgb(233, 233, 233);
@@ -11,9 +11,6 @@
 }
 /* Dark Color */
 .dh2{
-    box-shadow:  -4px 5px 5px var(--dcolor-shadow-h2) ;
-    border-bottom: solid calc(1px + 0.1vmin) var(--dcolor-border-h2) ;
-    border-left: solid calc(1px + 0.1vmin) var(--dcolor-border-h2)  ;
 }
 .cdcolor{
     background-color: var(--dcolor-background-primary);

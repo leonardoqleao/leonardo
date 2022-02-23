@@ -21,16 +21,22 @@
         width: 40%;
         transition: transform 200ms;
         justify-content: space-around;
-    }.rep-img:hover{
-        transform: scale(1.02);
-        box-shadow: -5px 10px 100px rgba(0, 0, 0, 0.171);
-        border-radius: 5px;
     }
-    .h2, .dh2{
+    .h2, .dh2{ 
         text-align: left ;
-        padding: 0 0 5px 15px ;
-        margin: 5px 20px 20px 40px;
-        border-radius: 4px 0 0 7px;
+        padding: 55px 0 5px 15px ;
+        margin: 0 70% 0 3%;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 1020;
+        position: sticky;
+        top: 0;
+        font-size: 30px;
+    }
+    .h2::before, .dh2::before {
+        position: relative;
+        content: "";
+        z-index: -1;
     }
     .menu-below-700{
         display: none;

@@ -1,0 +1,14 @@
+@media (min-width: 1200px){
+    .test::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+    }
+    .test {
+        text-align: left;
+        margin-top: 5rem;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}
