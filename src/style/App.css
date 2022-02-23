@@ -27,6 +27,7 @@ section {
   align-items: center;
 }
 hr {
+  margin-top: 5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
