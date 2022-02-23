@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 3.125rem rgb(16 23 30) inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
 *::selection{/*Alterando a cor de fundo dos textos selecionados.*/
   background-color: rgba(52, 179, 145, 0.378);
 }
@@ -12,12 +16,37 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 input[type="number"] {
   -moz-appearance: textfield;
 }
+section {
+  display: flex;
+  max-height: 100vh;
+  position: unset;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+hr {
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color: gray;
+  width: 95vw;
+}
 .App {/*Classe responsável por toda a tela.*/
   text-align: center;
 }
+
 .cabecalho{/*Classe responsável por todo o cabeçalho*/
   width: 100%;
+  position: static;
   display: flex;
+  overflow: hidden;
+  backdrop-filter: saturate(100%);
+  -webkit-backdrop-filter: saturate(100%);
 }
 .cabecalho::selection, .mcolor-ul-li-a::selection ,.mdcolor-ul-li-a::selection, .menu-below-700::selection, h2::selection, img::selection{/*Removendo a seleção de texto do cabeçalho*/
   background: none;
@@ -110,17 +139,17 @@ input[type="number"] {
 } */
 .geral-contact {
   text-align: center;
-  max-height: 100vh;
-  background: rgb(0, 0, 0);
+  max-height: 124vh;
+  background: rgb(0 0 0 / 59%);
   display: flex;
-  box-shadow: -1px -10px 5px 10px black;
+  box-shadow: 0px -10px 11px 7px #00000057;
   align-content: space-around;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 50px;
-  /* overflow: scroll; */
+  /* margin-top: 2px; */
+  /* overflow: scroll;*/
 }
 .form {
   flex-wrap: nowrap;
@@ -135,7 +164,9 @@ input[type="number"] {
   align-content: flex-start;
   align-items: flex-start;
 }
-
+.input-field{
+  width: 20vw;
+}
 .input-def {
   width: 100%;
   position: relative;
@@ -191,7 +222,7 @@ input[type="number"] {
   float: left;
 }
 #full-name, #email, #tel {
-  background-color:black;
+  background: rgb(0 0 0 / 0%);
   font-size: 20px;
   width: 100%;
   border: 0;
@@ -233,7 +264,7 @@ input[type="number"] {
   background: #00ff26;
 }
 #env:active{
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   color: #ebebeb;
   border: solid 2px white;
 }
