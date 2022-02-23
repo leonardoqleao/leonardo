@@ -1,7 +1,7 @@
 :root{
     /* color dark */
     --dcolor-font-primary: rgb(255, 255, 255);
-    --dcolor-background-primary: rgba(0, 0, 0, 0.80);
+    --dcolor-background-primary: rgba(0, 0, 0, 0.94);
     --dcolor-font-secondary: rgb(255, 255, 255);
     --dcolor-background-secondary: rgb(39, 56, 73) ;
     --dcolor-font-menu: rgb(233, 233, 233);
