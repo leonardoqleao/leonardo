@@ -39,6 +39,7 @@ hr {
 .App {/*Classe responsável por toda a tela.*/
   text-align: center;
 }
+
 .cabecalho{/*Classe responsável por todo o cabeçalho*/
   width: 100%;
   position: static;
