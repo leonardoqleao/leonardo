@@ -142,7 +142,7 @@ hr {
   max-height: 124vh;
   background: rgb(0 0 0 / 59%);
   display: flex;
-  box-shadow: 0px -10px 11px 7px #00000057;
+  box-shadow: -1px -1px 20px 7px #00000057;
   align-content: space-around;
   flex-direction: row;
   justify-content: space-evenly;
