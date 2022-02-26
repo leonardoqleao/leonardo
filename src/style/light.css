@@ -33,3 +33,7 @@
 .App{
     background-color: var(--dcolor-background-secondary);
 }
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 3.125rem rgb(105 105 105) inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
