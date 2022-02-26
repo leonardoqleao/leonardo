@@ -59,6 +59,10 @@
         height: auto;
         width: 650px;
     }
+    .rep-img:hover {
+        box-shadow: 0 0 10px 8px #00000070;
+        border-radius: 8px;
+    }
     .mdcolor-ul li, .mdcolor-ul-close li{ /*trocar por class*/
         display: inline-block;
     }
