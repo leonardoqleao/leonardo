@@ -18,7 +18,7 @@ class App extends Component {
       nome: '',
       display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''], // array = 0-3
       link: ['vue-dark', '333849', 'fff'], //array = 0=2
-      classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'],// array = 0-7
+      classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps','dinput'],// array = 0-8
       lightOurDark: iconLight,
       email: '',
       telefone: '',
@@ -68,13 +68,13 @@ class App extends Component {
     //Propriedade responsavel pela página clara
     if (this.state.lightOurDark === iconLight) {
       this.setState({ lightOurDark: iconDark })
-      this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps'] })
+      this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps','input'] })
       this.setState({ link: ['vue', 'c8c8c8', '000'] })
     }
     //Propriedade responsavel pela página escura
     else {
       this.setState({ lightOurDark: iconLight })
-      this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps'] })
+      this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps','dinput'] })
       this.setState({ link: ['vue-dark', '333849', 'fff'] })
     }
   }
@@ -323,17 +323,17 @@ class App extends Component {
                       <div class="input-field">
                         <div className='input-def'>
                           {/* Input 'nome' */}
-                          <input type="text" id="full-name" required onChange={this.handleFormNome} value={this.state.value} />
+                          <input className={classN[8]} type="text" id="full-name" required onChange={this.handleFormNome} value={this.state.value} />
                           <label for="full-name" id='label-full-name' >Nome:</label><br /><br />
                         </div>
                         <div className='input-def'>
                            {/* Input 'E-mail' */}
-                          <input type="text" id="email" required onChange={this.handleFormEmail} value={this.state.value} />
+                          <input className={classN[8]} type="text" id="email" required onChange={this.handleFormEmail} value={this.state.value} />
                           <label for="email" id='label-email'>E-mail:</label><br /><br />
                         </div>
                         <div className='input-def'>
                            {/* Input 'Telefone' */}
-                          <input type="number" id="tel" required onChange={this.handleFormTelefone} value={this.state.value} />
+                          <input className={classN[8]} type="number" id="tel" required onChange={this.handleFormTelefone} value={this.state.value} />
                           <label for="tel" id='label-tel'>Telefone:</label><br /><br />
                         </div>
                         <div className='input-def'>
@@ -342,7 +342,7 @@ class App extends Component {
                           <label for="tel" id='label-tel'>Assunto:</label><br /><br />
                         </div>
 
-                        <input type="submit" id='env' value='Enviar' />
+                        <input className={classN[8]} type="submit" id='env' value='Enviar' />
 
                       </div>
                     </form>
