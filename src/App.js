@@ -7,6 +7,7 @@ import './style/light.css';
 import './style/teste.css';
 import './style/media.css';
 import './style/index.css';
+import './style/text.css';
 import { Component } from 'react';
 import Axios from 'axios';
 
@@ -139,7 +140,17 @@ class App extends Component {
             {/* Aba Personal Statement começa aqui */}
             <div><br id='personal' />
               <h2 className={classN[0]}>Personal Statement:</h2><hr /><div class="b-example-divider"></div>
+              {/* <div className='text-container'>
+                <h1 className='text-h1'>Um pouco sobre mim:</h1>
+                <p className='text-p1'>
+                
+                Começo dizendo que eu gosto das coisas bem-organizadas, nada clichê, apenas gosto de estar ciente das coisas que acontecem, por muito tempo eu sou assim. Gosto 
+                de fazer tudo ocorrer seguindo um parâmetro. Por tempos isso foi frustrante, as tentativas de controlar 
+                tudo, sempre buscando a melhor forma de fazer alguma coisa.  
 
+
+                </p>
+              </div> */}
             </div>
 
             {/* Aba Experience começa aqui */}
@@ -151,7 +162,17 @@ class App extends Component {
             {/* Aba Projects começa aqui */}
             <div><br id='projects' />
               <h2 className={classN[0]}>Projects:</h2><hr /><div class="b-example-divider"></div>
+              <div className='text-container'>
+                <h1 className='text-h1'> Alguns projetos que eu já fiz: </h1>
+                <p className='text-p'>
+                Esse site é sem dúvidas um dos meus maiores desafios, começando pela parte de hospedagem e o
+                próprio desenvolvimento. Ao todo, foram gastos quase um mês para conseguir fazer tudo o que eu tinha 
+                que fazer, e mesmo ainda estando em desenvolvimento, eu aprendi muito com o processo até aqui.
+                
 
+                </p>
+
+              </div>
             </div>
 
             {/* Aba GitHub começa aqui */}
