@@ -51,7 +51,7 @@ class App extends Component {
 
   //responsavel por enviar os dados para porta selecionada
   submit = (event) => {
-    Axios.post('http://35.199.122.107:9999/form/', {
+    Axios.post('http://www.leonardoqueiros.com.br:9999/idform/form', {
       nome: this.state.nome,
       email: this.state.email,
       telefone: this.state.telefone,
