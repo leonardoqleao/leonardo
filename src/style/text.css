@@ -20,6 +20,11 @@
     font-size: 15px;
     align-self: flex-start;
 }
+.text-li{
+    margin: 5px 0 10px 0;
+    font-size: 120%;
+    text-decoration: wavy;
+}
 @media(max-width: 900px){
     .text-p {
         max-width: 88vw;
@@ -29,10 +34,9 @@
     text-indent: 44px;
     text-align: justify;
     max-width: 88vw;
-    margin: 18px 0 10px 0;
+    margin: 8px 0 5px 0;
     font-size: 15px;
 }
 .text-p1::first-letter, .text-p::first-letter {
-    font-size: 150%;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
 }
