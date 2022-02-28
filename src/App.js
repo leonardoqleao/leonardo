@@ -7,6 +7,7 @@ import './style/light.css';
 import './style/teste.css';
 import './style/media.css';
 import './style/index.css';
+import './style/text.css';
 import { Component } from 'react';
 import Axios from 'axios';
 
@@ -18,7 +19,7 @@ class App extends Component {
       nome: '',
       display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''], // array = 0-3
       link: ['vue-dark', '333849', 'fff'], //array = 0=2
-      classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps','dinput'],// array = 0-8
+      classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps', 'dinput'],// array = 0-8
       lightOurDark: iconLight,
       email: '',
       telefone: '',
@@ -50,7 +51,7 @@ class App extends Component {
 
   //responsavel por enviar os dados para porta selecionada
   submit = (event) => {
-    Axios.post('http://localhost:2222/form/', {
+    Axios.post('http://35.199.122.107:9999/form/', {
       nome: this.state.nome,
       email: this.state.email,
       telefone: this.state.telefone,
@@ -68,13 +69,13 @@ class App extends Component {
     //Propriedade responsavel pela página clara
     if (this.state.lightOurDark === iconLight) {
       this.setState({ lightOurDark: iconDark })
-      this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps','input'] })
+      this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps', 'input'] })
       this.setState({ link: ['vue', 'c8c8c8', '000'] })
     }
     //Propriedade responsavel pela página escura
     else {
       this.setState({ lightOurDark: iconLight })
-      this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps','dinput'] })
+      this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps', 'dinput'] })
       this.setState({ link: ['vue-dark', '333849', 'fff'] })
     }
   }
@@ -139,7 +140,17 @@ class App extends Component {
             {/* Aba Personal Statement começa aqui */}
             <div><br id='personal' />
               <h2 className={classN[0]}>Personal Statement:</h2><hr /><div class="b-example-divider"></div>
+              {/* <div className='text-container'>
+                <h1 className='text-h1'>Um pouco sobre mim:</h1>
+                <p className='text-p1'>
+                
+                Começo dizendo que eu gosto das coisas bem-organizadas, nada clichê, apenas gosto de estar ciente das coisas que acontecem, por muito tempo eu sou assim. Gosto 
+                de fazer tudo ocorrer seguindo um parâmetro. Por tempos isso foi frustrante, as tentativas de controlar 
+                tudo, sempre buscando a melhor forma de fazer alguma coisa.  
 
+
+                </p>
+              </div> */}
             </div>
 
             {/* Aba Experience começa aqui */}
@@ -151,7 +162,31 @@ class App extends Component {
             {/* Aba Projects começa aqui */}
             <div><br id='projects' />
               <h2 className={classN[0]}>Projects:</h2><hr /><div class="b-example-divider"></div>
+              <div className='text-container'>
+                {/* <h1 className='text-h1'> Alguns projetos que eu já fiz: </h1>
+                <p className='text-p'>
+                  <h3 className='text-h1' >Meu primeiro projeto com a programação foi uma planilha em VBA:</h3> 
+                  <p className='text-p1'>
+                    Eu precisava fazer uma planilha que gerasse um 
+                  </p>
+                </p>
+                <p className='text-p'>
+                  Esse site é sem dúvidas um dos meus maiores desafios, começando pela parte de hospedagem e o
+                  próprio desenvolvimento. Ao todo, foram gastos quase um mês para conseguir fazer tudo o que eu tinha
+                  que fazer, e mesmo ainda estando em desenvolvimento, eu aprendi muito com o processo até aqui.
+                  <li className='text-li'>
+                    Posso começar dizendo um pouco sobre a hospedagem:
+                  </li>
+                  <p className='text-p1'>
+                    Inicialmente, a ideai era utilizar hospedagem compartilhada, daria certo se o meu projeto não tivesse o formulário, e eu só fui saber disso na hora de upar.
+                    Nessa hora começou uma grande dor de cabeça, eu não fazia ideia de como eu iria subir site com nodeJS. Começei a estudar sobre as VM do google; posso dizer que ue fiquei
+                    muitos dias tentando entender como elas funcionavam, como eu poderia utilizar elas sem ter que pagar o absurdo que normalmente é cobrado. E o pior de tudo, como eu iria
+                    apontar meu domínio para VM.
+                  </p>
+                </p> */}
 
+
+              </div>
             </div>
 
             {/* Aba GitHub começa aqui */}
@@ -220,7 +255,7 @@ class App extends Component {
 
                       {/* Icone do GitHub em SVG */}
                       <div className='single-icon-contact' >
-                         
+
                         <a href='https://github.com/leonardoqleao'>
                           <svg id='git' viewBox="0 0 100 100">
                             <circle cx="50" cy="50" r="30" fill="#4e6e91" />
@@ -327,17 +362,17 @@ class App extends Component {
                           <label for="full-name" id='label-full-name' >Nome:</label><br /><br />
                         </div>
                         <div className='input-def'>
-                           {/* Input 'E-mail' */}
+                          {/* Input 'E-mail' */}
                           <input className={classN[8]} type="text" id="email" required onChange={this.handleFormEmail} value={this.state.value} />
                           <label for="email" id='label-email'>E-mail:</label><br /><br />
                         </div>
                         <div className='input-def'>
-                           {/* Input 'Telefone' */}
+                          {/* Input 'Telefone' */}
                           <input className={classN[8]} type="number" id="tel" required onChange={this.handleFormTelefone} value={this.state.value} />
                           <label for="tel" id='label-tel'>Telefone:</label><br /><br />
                         </div>
                         <div className='input-def'>
-                           {/* textarea 'Assunto' */}
+                          {/* textarea 'Assunto' */}
                           <textarea type="text" id="tel" required onChange={this.handleFormAsstunto} value={this.state.value} />
                           <label for="tel" id='label-tel'>Assunto:</label><br /><br />
                         </div>
