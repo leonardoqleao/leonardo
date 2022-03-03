@@ -84,9 +84,18 @@ hr {
   overflow-y:scroll;
   scrollbar-width: none;
 }
-.bcolor::-webkit-scrollbar, .bdcolor::-webkit-scrollbar, html::-webkit-scrollbar{
-  display: none;
+*::-webkit-scrollbar{
+  width: 6px;
 }
+*::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+*::-webkit-scrollbar-thumb{
+  background-color:rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid rgb(36, 36, 36);
+}
+
 .stats { /*Aba GitHub*/
   padding: 10px;
 }
