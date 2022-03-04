@@ -10,7 +10,7 @@ import './style/index.css';
 import './style/text.css';
 import { Component } from 'react';
 import Axios from 'axios';
-import Personal from './js/personal';
+import Personal from './ejs/personal';
 
 class App extends Component {
   //Construtor onde estão listadas todos os arrays usados nas animações e funções, cada objeto representa uma função na página
