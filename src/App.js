@@ -10,6 +10,7 @@ import './style/index.css';
 import './style/text.css';
 import { Component } from 'react';
 import Axios from 'axios';
+import Personal from './js/personal';
 
 class App extends Component {
   //Construtor onde estão listadas todos os arrays usados nas animações e funções, cada objeto representa uma função na página
@@ -103,9 +104,9 @@ class App extends Component {
       <div className={classN[5]}>
         {/* Aba ainda em desenvolviemnto!
          <div className='mother'>
-          <div className='c1'>
-            <h1>olá</h1>
-            <div className='c2'>
+          <div className='c0'>
+            <h0>olá</h0>
+            <div className='c1'>
 
             </div>
           </div>
@@ -140,17 +141,8 @@ class App extends Component {
             {/* Aba Personal Statement começa aqui */}
             <div><br id='personal' />
               <h2 className={classN[0]}>Personal Statement:</h2><hr /><div class="b-example-divider"></div>
-              {/* <div className='text-container'>
-                <h1 className='text-h1'>Um pouco sobre mim:</h1>
-                <p className='text-p1'>
-                
-                Começo dizendo que eu gosto das coisas bem-organizadas, nada clichê, apenas gosto de estar ciente das coisas que acontecem, por muito tempo eu sou assim. Gosto 
-                de fazer tudo ocorrer seguindo um parâmetro. Por tempos isso foi frustrante, as tentativas de controlar 
-                tudo, sempre buscando a melhor forma de fazer alguma coisa.  
-
-
-                </p>
-              </div> */}
+              {/* externando os texto da aba personal para facilitar alterações */}
+              <Personal/>
             </div>
 
             {/* Aba Experience começa aqui */}
