@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 3.125rem rgb(16 23 30) inset !important;
   -webkit-text-fill-color: #fff !important;
@@ -302,7 +303,7 @@ Aba para animar um contador de tempo
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: rgb(0 0 0 / 75%);
+  background: rgb(0 0 0 / 70%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -310,7 +311,7 @@ Aba para animar um contador de tempo
 }
 .c1 {
   position: relative;
-  background: black;
+  background: rgb(0, 0, 0);
   height: 50vh;
   width: 50vw;
   border-radius: 10px;
@@ -323,20 +324,20 @@ Aba para animar um contador de tempo
   margin: 0 10px 0 10px ;
   width: calc(100% - 20px);
   height: 2%;
-  /* background: #00ff66; */
   border-radius: 5px;
-  /* position: relative; */
-  animation:  arroz 7s;
-  background-color: rgb(0, 0, 0);
+  position: absolute;
+  animation:  arroz 5s;
+}
+.mother2{
+  display: none;
 }
 @keyframes arroz {
   0% {
     width: 0%; height: 1px;
     background-color: rgb(255, 255, 255);
-  }50%{
-    background-color: rgb(255, 255, 255);
   }
   100% {
     width: calc(100% - 20px); height: 1px;
+    background-color: rgb(0, 0, 0);
   }
 }
