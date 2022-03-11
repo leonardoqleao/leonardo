@@ -20,7 +20,7 @@ class App extends Component {
       nome: '',
       display: ['mdcolor-ul-close', 'button-light-dark-close', 'cabecalho-close', ''], // array = 0-3
       link: ['vue-dark', '333849', 'fff'], //array = 0=2
-      classN: ['dh2 t', 'cabecalho cdcolor t', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps', 'dinput', 'mother'],// array = 0-9
+      classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps', 'dinput', 'mother'],// array = 0-9
       lightOurDark: iconLight,
       email: '',
       telefone: '',
@@ -70,13 +70,13 @@ class App extends Component {
     //Propriedade responsavel pela página clara
     if (this.state.lightOurDark === iconLight) {
       this.setState({ lightOurDark: iconDark })
-      this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps', 'input'] })
+      this.setState({ classN: ['h2', 'cabecalho ccolor', 'menu-below-700 mcolor', 'mcolor-ul-li-a', 'bcolor', 'App', 'menu', 'reps', 'input', 'mother'] })
       this.setState({ link: ['vue', 'c8c8c8', '000'] })
     }
     //Propriedade responsavel pela página escura
     else {
       this.setState({ lightOurDark: iconLight })
-      this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps', 'dinput'] })
+      this.setState({ classN: ['dh2', 'cabecalho cdcolor', 'menu-below-700 mdcolor', 'mdcolor-ul-li-a', 'bdcolor', 'App', 'menu', 'dreps', 'dinput', 'mother'] })
       this.setState({ link: ['vue-dark', '333849', 'fff'] })
     }
   }
@@ -109,13 +109,13 @@ render() {
   return (
 
     <div className={classN[5]}>
-      <div className={classN[9]}>
+      {/* <div className={classN[9]}>
         <div className='c1'>
           <h0>olá</h0>
           <div className='c2'>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Cabeçlho*/}
       <header className={classN[1] + ' ' + display[2]}>
